@@ -1,0 +1,89 @@
+name: build
+
+# Builds APoseFix.dll for Skyrim SE / AE, including AE 1.7.x (Address Library format 5).
+#
+# The repository does not build as cloned:
+#   * lib/serdehkx only carries the C header of the serde_hkx FFI library. The static library
+#     (serde_hkx_ffi.lib) is built here from SARDONYX-sard/serde-hkx at a pinned commit.
+#   * CommonLibSSE-NG (lib/commonlibsse-ng) needs xmake 3.
+#
+# Result: an artifact whose root is a mod root (SKSE/Plugins/APoseFix.dll + .pdb), so the
+# downloaded zip can be installed with a mod manager on top of the original mod.
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+  SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+  XMAKE_VERSION: 3.1.1
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Show the pinned revisions
+        run: |
+          git log --oneline -1
+          git -C lib/commonlibsse-ng log --oneline -1
+
+      - name: Install the toolchain (Rust stable, xmake)
+        run: |
+          set -euo pipefail
+          rustup set profile minimal
+          rustup toolchain install stable --no-self-update
+          rustup default stable
+          rustc --version
+
+          curl -fsSL -o "$RUNNER_TEMP/xmake.zip" \
+            "https://github.com/xmake-io/xmake/releases/download/v$XMAKE_VERSION/xmake-v$XMAKE_VERSION.win64.zip"
+          unzip -qo "$RUNNER_TEMP/xmake.zip" -d "$RUNNER_TEMP/xmake"
+          echo "$RUNNER_TEMP/xmake/xmake" >> "$GITHUB_PATH"
+
+      # Run cargo from the workspace root, not from crates/serde_hkx_ffi: that crate's own
+      # .cargo/config.toml asks for a static CRT, which would not match the /MD plugin.
+      - name: Build the serde_hkx FFI static library
+        run: |
+          set -euo pipefail
+          git clone --quiet "$SERDE_HKX_REPO" "$RUNNER_TEMP/serde-hkx"
+          git -C "$RUNNER_TEMP/serde-hkx" checkout --quiet "$SERDE_HKX_SHA"
+          cargo build --release -p serde_hkx_ffi --manifest-path "$RUNNER_TEMP/serde-hkx/Cargo.toml"
+          cp "$RUNNER_TEMP/serde-hkx/target/release/serde_hkx_ffi.lib" lib/serdehkx/
+          ls -l lib/serdehkx/
+
+      - name: Build the plugin
+        run: |
+          set -euo pipefail
+          xmake --version
+          xmake f -y -p windows -a x64 -m releasedbg
+          xmake build -y
+          ls -l build/windows/x64/releasedbg/
+
+      - name: Stage as an installable mod
+        run: |
+          set -euo pipefail
+          mkdir -p dist/SKSE/Plugins
+          cp build/windows/x64/releasedbg/APoseFix.dll dist/SKSE/Plugins/
+          # the symbol file is optional: it lets a crash logger print function names for this DLL
+          if [ -f build/windows/x64/releasedbg/APoseFix.pdb ]; then
+            cp build/windows/x64/releasedbg/APoseFix.pdb dist/SKSE/Plugins/
+          fi
+          sha256sum dist/SKSE/Plugins/APoseFix.dll
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: APoseFix-skyrim-1.7
+          path: dist
+          if-no-files-found: error
