@@ -52,13 +52,19 @@ jobs:
           unzip -qo "$RUNNER_TEMP/xmake.zip" -d "$RUNNER_TEMP/xmake"
           echo "$RUNNER_TEMP/xmake/xmake" >> "$GITHUB_PATH"
 
-      # Run cargo from the workspace root, not from crates/serde_hkx_ffi: that crate's own
-      # .cargo/config.toml asks for a static CRT, which would not match the /MD plugin.
+      # lib/serdehkx/serde_hkx_ffi-catch-panic.patch: the library panics on some damaged hkx files
+      # (a truncated file, for one). A panic that leaves its extern "C" entry point aborts the
+      # process, i.e. the game. The patch catches it and returns SERDE_HKX_INTERNAL_ERROR.
+      #
+      # Run cargo from outside crates/serde_hkx_ffi: that crate's own .cargo/config.toml asks for a
+      # static CRT, which would not match the /MD plugin.
       - name: Build the serde_hkx FFI static library
         run: |
           set -euo pipefail
-          git clone --quiet "$SERDE_HKX_REPO" "$RUNNER_TEMP/serde-hkx"
+          git clone --quiet -c core.autocrlf=false "$SERDE_HKX_REPO" "$RUNNER_TEMP/serde-hkx"
           git -C "$RUNNER_TEMP/serde-hkx" checkout --quiet "$SERDE_HKX_SHA"
+          git -C "$RUNNER_TEMP/serde-hkx" apply --ignore-whitespace --whitespace=nowarn "$GITHUB_WORKSPACE/lib/serdehkx/serde_hkx_ffi-catch-panic.patch"
+          git -C "$RUNNER_TEMP/serde-hkx" diff --stat
           cargo build --release -p serde_hkx_ffi --manifest-path "$RUNNER_TEMP/serde-hkx/Cargo.toml"
           cp "$RUNNER_TEMP/serde-hkx/target/release/serde_hkx_ffi.lib" lib/serdehkx/
           ls -l lib/serdehkx/

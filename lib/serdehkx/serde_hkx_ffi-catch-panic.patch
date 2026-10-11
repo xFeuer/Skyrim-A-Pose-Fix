@@ -1,0 +1,25 @@
+diff --git a/crates/serde_hkx_ffi/src/lib.rs b/crates/serde_hkx_ffi/src/lib.rs
+index 814c1f4..192a3c4 100644
+--- a/crates/serde_hkx_ffi/src/lib.rs
++++ b/crates/serde_hkx_ffi/src/lib.rs
+@@ -40,6 +40,20 @@ pub extern "C" fn serde_hkx_ffi_convert(
+     input_path: *const c_char,
+     output_path: *const c_char,
+     format: OutputFormat,
++) -> SerdeHkxError {
++    // A panic must not leave an `extern "C"` function: that aborts the host process.
++    // Malformed input (e.g. a truncated hkx) can make the deserializer panic, so report it
++    // as an error code instead.
++    std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
++        convert(input_path, output_path, format)
++    }))
++    .unwrap_or(SerdeHkxError::InternalError)
++}
++
++fn convert(
++    input_path: *const c_char,
++    output_path: *const c_char,
++    format: OutputFormat,
+ ) -> SerdeHkxError {
+     let input = match input_cstr_to_path(input_path) {
+         Ok(input) => input,
