@@ -2,6 +2,30 @@
 #include "RE/H/hkbBehaviorReferenceGenerator.h"
 #include "converter.h"
 #include "paths.h"
+#include <cstring>
+#include <memory>
+
+namespace
+{
+    // Do not call RE::hkStringPtr::data() / c_str() / size() here.
+    //
+    // Every CommonLibSSE-NG revision that knows Skyrim 1.7 declares
+    //     enum StringFlags { kMask = static_cast<std::uint32_t>(-1), kManaged = 1 << 0 };
+    // and implements data() as
+    //     reinterpret_cast<std::uintptr_t>(_data) & ~kManaged
+    // CommonLib is compiled with /Zc:enumTypes. With that switch the enum is an unsigned 32-bit type (kMask does
+    // not fit in an int), ~kManaged is 0xFFFFFFFE, and the mask clears the upper half of the 64-bit pointer.
+    // Reading the string through the truncated pointer crashes the game.
+    //
+    // So read the pointer ourselves and clear only bit 0, which Havok uses as its "owns the buffer" flag.
+    const char* GetStringData(const RE::hkStringPtr& a_string) noexcept
+    {
+        static_assert(sizeof(RE::hkStringPtr) == sizeof(std::uintptr_t));
+        std::uintptr_t raw = 0;
+        std::memcpy(&raw, std::addressof(a_string), sizeof(raw));
+        return reinterpret_cast<const char*>(raw & ~static_cast<std::uintptr_t>(1));
+    }
+}
 
 namespace APoseFix
 {
@@ -107,7 +131,11 @@ namespace APoseFix
         {
             return result;
         }
-        auto *animationFilename = animationBundleNames[animationBindingIndex].data();
+        auto *animationFilename = GetStringData(animationBundleNames[animationBindingIndex]);
+        if (!animationFilename)
+        {
+            return result;
+        }
         std::filesystem::path animationPath;
         if (!PathResolver::GetAbsoluteFolderPath(graph->projectName.c_str(), animationFilename, animationPath))
         {
