@@ -1,5 +1,4 @@
 #include "hook.h"
-#include "RE/A/AnimationClipDataSingleton.h"
 #include "RE/H/hkbBehaviorReferenceGenerator.h"
 #include "converter.h"
 #include "paths.h"
