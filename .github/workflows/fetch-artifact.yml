@@ -1,0 +1,44 @@
+name: fetch-artifact
+
+# Temporary helper, not part of the fix. It copies the DLL and the log of one finished build run
+# onto a throwaway branch so they can be inspected with plain git. Delete both branches afterwards.
+
+on:
+  push:
+    branches: [ci/fetch-artifact]
+
+permissions:
+  contents: write
+  actions: read
+
+env:
+  BUILD_RUN_ID: "38187013382"
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: APoseFix-skyrim-1.7
+          run-id: ${{ env.BUILD_RUN_ID }}
+          github-token: ${{ github.token }}
+          path: dist
+
+      - name: Publish the DLL and the build log on a throwaway branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd dist
+          find . -type f -exec sha256sum {} + | sort -k2 > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+          gh run view "$BUILD_RUN_ID" --repo "$GITHUB_REPOSITORY" --log > build.log || echo "log download failed" > build.log
+          wc -c build.log
+          git init -q -b "ci/artifact-$BUILD_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add SKSE/Plugins/APoseFix.dll SHA256SUMS.txt build.log
+          git commit -q -m "Output of build run $BUILD_RUN_ID (temporary, for inspection)"
+          git push --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/ci/artifact-$BUILD_RUN_ID"
