@@ -1,0 +1,994 @@
+windows	Set up job	﻿2026-10-12T00:10:43.0058017Z Current runner version: '2.337.0'
+windows	Set up job	2026-10-12T00:10:43.0112568Z ##[group]Runner Image Provisioner
+windows	Set up job	2026-10-12T00:10:43.0113332Z Hosted Compute Agent
+windows	Set up job	2026-10-12T00:10:43.0113811Z Version: 20260901.588
+windows	Set up job	2026-10-12T00:10:43.0114283Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+windows	Set up job	2026-10-12T00:10:43.0114822Z Build Date: 2026-09-01T19:56:44Z
+windows	Set up job	2026-10-12T00:10:43.0115341Z Worker ID: {5fdb6c6e-4bff-41a0-8a76-05b74976b789}
+windows	Set up job	2026-10-12T00:10:43.0115869Z Azure Region: westus3
+windows	Set up job	2026-10-12T00:10:43.0116299Z ##[endgroup]
+windows	Set up job	2026-10-12T00:10:43.0117373Z ##[group]Operating System
+windows	Set up job	2026-10-12T00:10:43.0117846Z Microsoft Windows Server 2025
+windows	Set up job	2026-10-12T00:10:43.0118364Z 10.0.26100
+windows	Set up job	2026-10-12T00:10:43.0118830Z Datacenter
+windows	Set up job	2026-10-12T00:10:43.0119228Z ##[endgroup]
+windows	Set up job	2026-10-12T00:10:43.0119673Z ##[group]Runner Image
+windows	Set up job	2026-10-12T00:10:43.0120099Z Image: windows-2025-vs2026
+windows	Set up job	2026-10-12T00:10:43.0120589Z Version: 20260925.250.1
+windows	Set up job	2026-10-12T00:10:43.0121467Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260925.250/images/windows/Windows2025-VS2026-Readme.md
+windows	Set up job	2026-10-12T00:10:43.0123168Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260925.250
+windows	Set up job	2026-10-12T00:10:43.0123900Z ##[endgroup]
+windows	Set up job	2026-10-12T00:10:43.0124783Z ##[group]GITHUB_TOKEN Permissions
+windows	Set up job	2026-10-12T00:10:43.0126249Z Contents: read
+windows	Set up job	2026-10-12T00:10:43.0126729Z Metadata: read
+windows	Set up job	2026-10-12T00:10:43.0127130Z ##[endgroup]
+windows	Set up job	2026-10-12T00:10:43.0128946Z Secret source: Actions
+windows	Set up job	2026-10-12T00:10:43.0129685Z Cache mode: write
+windows	Set up job	2026-10-12T00:10:43.0130229Z Prepare workflow directory
+windows	Set up job	2026-10-12T00:10:43.0490816Z Prepare all required actions
+windows	Set up job	2026-10-12T00:10:43.0546448Z Getting action download info
+windows	Set up job	2026-10-12T00:10:43.3504456Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+windows	Set up job	2026-10-12T00:10:43.4599916Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+windows	Set up job	2026-10-12T00:10:43.7441964Z Complete job name: windows
+windows	Run actions/checkout@v4	﻿2026-10-12T00:10:43.8973447Z ##[group]Run actions/checkout@v4
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8974313Z with:
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8974621Z   submodules: recursive
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8974992Z   repository: xFeuer/Skyrim-A-Pose-Fix
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8978553Z   token: ***
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8978866Z   ssh-strict: true
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8979177Z   ssh-user: git
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8979490Z   persist-credentials: true
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8979841Z   clean: true
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8980160Z   sparse-checkout-cone-mode: true
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8980549Z   fetch-depth: 1
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8980853Z   fetch-tags: false
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8981172Z   show-progress: true
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8981491Z   lfs: false
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8981794Z   set-safe-directory: true
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8982156Z   allow-unsafe-pr-checkout: false
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8982691Z env:
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8983224Z   SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8983808Z   SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8984321Z   XMAKE_VERSION: 3.1.1
+windows	Run actions/checkout@v4	2026-10-12T00:10:43.8984643Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.0148717Z Syncing repository: xFeuer/Skyrim-A-Pose-Fix
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.0150196Z ##[group]Getting Git version info
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.0150762Z Working directory is 'D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix'
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.0840932Z [command]"C:\Program Files\Git\bin\git.exe" version
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.4365793Z git version 2.55.0.windows.5
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.4401775Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.4416949Z Temporarily overriding HOME='D:\a\_temp\a369c56f-330f-4cf7-91ab-12e8c87c85fa' before making global git config changes
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.4417987Z Adding repository directory to the temporary git global config as a safe directory
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.4426191Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.5012253Z Deleting the contents of 'D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix'
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.5017824Z ##[group]Initializing the repository
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.5025281Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.5762035Z Initialized empty Git repository in D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/.git/
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.5802702Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/xFeuer/Skyrim-A-Pose-Fix
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.6378789Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.6379521Z ##[group]Disabling automatic garbage collection
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.6386119Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.6634547Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.6635800Z ##[group]Setting up auth
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.6644517Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+windows	Run actions/checkout@v4	2026-10-12T00:10:44.6907223Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+windows	Run actions/checkout@v4	2026-10-12T00:10:46.0775513Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+windows	Run actions/checkout@v4	2026-10-12T00:10:46.1033313Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+windows	Run actions/checkout@v4	2026-10-12T00:10:46.5443325Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+windows	Run actions/checkout@v4	2026-10-12T00:10:46.5687161Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+windows	Run actions/checkout@v4	2026-10-12T00:10:47.0034417Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+windows	Run actions/checkout@v4	2026-10-12T00:10:47.0288084Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:47.0288601Z ##[group]Fetching the repository
+windows	Run actions/checkout@v4	2026-10-12T00:10:47.0302190Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ef70bb78df021c23f29e4b0720703839538a42d6:refs/remotes/origin/fix/skyrim-1.7
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.0826870Z From https://github.com/xFeuer/Skyrim-A-Pose-Fix
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.0827874Z  * [new ref]         ef70bb78df021c23f29e4b0720703839538a42d6 -> origin/fix/skyrim-1.7
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.0864939Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.0865295Z ##[group]Determining the checkout info
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.0867034Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.0875515Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.1500576Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.1762052Z ##[group]Checking out the ref
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.1769652Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B fix/skyrim-1.7 refs/remotes/origin/fix/skyrim-1.7
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.3394809Z Switched to a new branch 'fix/skyrim-1.7'
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.3562506Z branch 'fix/skyrim-1.7' set up to track 'origin/fix/skyrim-1.7'.
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.3607540Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.3607924Z ##[group]Setting up auth for fetching submodules
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.3615446Z [command]"C:\Program Files\Git\bin\git.exe" config --global http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.3881288Z [command]"C:\Program Files\Git\bin\git.exe" config --global --unset-all url.https://github.com/.insteadOf
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.4132253Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add url.https://github.com/.insteadOf git@github.com:
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.4389770Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add url.https://github.com/.insteadOf org-30358023@github.com:
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.4648148Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.4648674Z ##[group]Fetching submodules
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.4656841Z [command]"C:\Program Files\Git\bin\git.exe" submodule sync --recursive
+windows	Run actions/checkout@v4	2026-10-12T00:10:49.9373339Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+windows	Run actions/checkout@v4	2026-10-12T00:10:50.4061572Z Submodule 'lib/commonlibsse-ng' (https://github.com/alandtse/CommonLibVR.git) registered for path 'lib/commonlibsse-ng'
+windows	Run actions/checkout@v4	2026-10-12T00:10:50.4648301Z Cloning into 'D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/lib/commonlibsse-ng'...
+windows	Run actions/checkout@v4	2026-10-12T00:10:54.5931669Z From https://github.com/alandtse/CommonLibVR
+windows	Run actions/checkout@v4	2026-10-12T00:10:54.5932099Z  * branch            98c8df05f1c05915b16af45181c7638ef925f465 -> FETCH_HEAD
+windows	Run actions/checkout@v4	2026-10-12T00:10:55.1644137Z Submodule path 'lib/commonlibsse-ng': checked out '98c8df05f1c05915b16af45181c7638ef925f465'
+windows	Run actions/checkout@v4	2026-10-12T00:10:55.1768133Z Submodule 'openvr' (https://github.com/ValveSoftware/openvr.git) registered for path 'lib/commonlibsse-ng/extern/openvr'
+windows	Run actions/checkout@v4	2026-10-12T00:10:55.2066417Z Cloning into 'D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/lib/commonlibsse-ng/extern/openvr'...
+windows	Run actions/checkout@v4	2026-10-12T00:11:11.5005609Z From https://github.com/ValveSoftware/openvr
+windows	Run actions/checkout@v4	2026-10-12T00:11:11.5006249Z  * branch            60eb187801956ad277f1cae6680e3a410ee0873b -> FETCH_HEAD
+windows	Run actions/checkout@v4	2026-10-12T00:11:13.2459579Z Submodule path 'lib/commonlibsse-ng/extern/openvr': checked out '60eb187801956ad277f1cae6680e3a410ee0873b'
+windows	Run actions/checkout@v4	2026-10-12T00:11:13.2670812Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local gc.auto 0"
+windows	Run actions/checkout@v4	2026-10-12T00:11:13.6762647Z Entering 'lib/commonlibsse-ng'
+windows	Run actions/checkout@v4	2026-10-12T00:11:13.7295445Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Run actions/checkout@v4	2026-10-12T00:11:13.7797417Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:11:13.7798464Z ##[group]Persisting credentials for submodules
+windows	Run actions/checkout@v4	2026-10-12T00:11:13.7808942Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :\""
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.2155344Z Entering 'lib/commonlibsse-ng'
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.2803796Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.3599607Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url\""
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.7849621Z Entering 'lib/commonlibsse-ng'
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.8532066Z file:D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/.git/modules/lib/commonlibsse-ng/config	remote.origin.url
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.8676768Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.9370389Z file:D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/.git/modules/lib/commonlibsse-ng/modules/openvr/config	remote.origin.url
+windows	Run actions/checkout@v4	2026-10-12T00:11:14.9636400Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'"
+windows	Run actions/checkout@v4	2026-10-12T00:11:15.4056145Z Entering 'lib/commonlibsse-ng'
+windows	Run actions/checkout@v4	2026-10-12T00:11:15.4477534Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Run actions/checkout@v4	2026-10-12T00:11:15.4979572Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --add 'url.https://github.com/.insteadOf' 'org-30358023@github.com:'"
+windows	Run actions/checkout@v4	2026-10-12T00:11:15.9221619Z Entering 'lib/commonlibsse-ng'
+windows	Run actions/checkout@v4	2026-10-12T00:11:15.9647329Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Run actions/checkout@v4	2026-10-12T00:11:16.0157926Z ##[endgroup]
+windows	Run actions/checkout@v4	2026-10-12T00:11:16.0517028Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+windows	Run actions/checkout@v4	2026-10-12T00:11:16.0831559Z ef70bb78df021c23f29e4b0720703839538a42d6
+windows	Show the pinned revisions	﻿2026-10-12T00:11:16.1177492Z ##[group]Run git log --oneline -1
+windows	Show the pinned revisions	2026-10-12T00:11:16.1177830Z ^[[36;1mgit log --oneline -1^[[0m
+windows	Show the pinned revisions	2026-10-12T00:11:16.1178071Z ^[[36;1mgit -C lib/commonlibsse-ng log --oneline -1^[[0m
+windows	Show the pinned revisions	2026-10-12T00:11:16.1195391Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+windows	Show the pinned revisions	2026-10-12T00:11:16.1195901Z env:
+windows	Show the pinned revisions	2026-10-12T00:11:16.1196124Z   SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+windows	Show the pinned revisions	2026-10-12T00:11:16.1196422Z   SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+windows	Show the pinned revisions	2026-10-12T00:11:16.1196645Z   XMAKE_VERSION: 3.1.1
+windows	Show the pinned revisions	2026-10-12T00:11:16.1196795Z ##[endgroup]
+windows	Show the pinned revisions	2026-10-12T00:11:16.5012764Z ef70bb7 build: keep a converter panic from killing the game
+windows	Show the pinned revisions	2026-10-12T00:11:16.5264646Z 98c8df0 fix(skse): set V5 flag in plugin declarations (#360)
+windows	Install the toolchain (Rust stable, xmake)	﻿2026-10-12T00:11:16.5450321Z ##[group]Run set -euo pipefail
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5450700Z ^[[36;1mset -euo pipefail^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5450901Z ^[[36;1mrustup set profile minimal^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5451155Z ^[[36;1mrustup toolchain install stable --no-self-update^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5451405Z ^[[36;1mrustup default stable^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5451586Z ^[[36;1mrustc --version^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5451749Z ^[[36;1m^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5451934Z ^[[36;1mcurl -fsSL -o "$RUNNER_TEMP/xmake.zip" \^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5452376Z ^[[36;1m  "https://github.com/xmake-io/xmake/releases/download/v$XMAKE_VERSION/xmake-v$XMAKE_VERSION.win64.zip"^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5452848Z ^[[36;1munzip -qo "$RUNNER_TEMP/xmake.zip" -d "$RUNNER_TEMP/xmake"^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5453145Z ^[[36;1mecho "$RUNNER_TEMP/xmake/xmake" >> "$GITHUB_PATH"^[[0m
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5463915Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5464215Z env:
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5464433Z   SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5464767Z   SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5464997Z   XMAKE_VERSION: 3.1.1
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:16.5465156Z ##[endgroup]
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:17.4167504Z info: profile set to minimal
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:20.3100582Z info: syncing channel updates for stable-x86_64-pc-windows-msvc
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:20.9103300Z info: latest update on 2026-10-01 for version 1.99.0 (b940084d7 2026-09-28)
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:20.9426808Z info: removing previous version of component rustfmt
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:20.9628500Z info: removing previous version of component clippy
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:20.9858294Z info: removing previous version of component rust-std for target x86_64-pc-windows-gnu
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:21.1089384Z info: removing previous version of component rust-std for target i686-pc-windows-msvc
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:21.2044535Z info: removing previous version of component cargo
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:21.2805167Z info: removing previous version of component rust-std
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:21.3543050Z info: removing previous version of component rustc
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:21.5076277Z info: downloading 7 components
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:31.6673735Z 
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:33.5088138Z   stable-x86_64-pc-windows-msvc updated - rustc 1.99.0 (b940084d7 2026-09-28) (from rustc 1.98.1 (48a229cea 2026-09-01))
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:33.5088745Z 
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:33.5361310Z info: using existing install for stable-x86_64-pc-windows-msvc
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:33.5432148Z info: default toolchain set to stable-x86_64-pc-windows-msvc
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:33.5432483Z 
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:33.5613233Z   stable-x86_64-pc-windows-msvc unchanged - rustc 1.99.0 (b940084d7 2026-09-28)
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:33.5613678Z 
+windows	Install the toolchain (Rust stable, xmake)	2026-10-12T00:11:34.2627549Z rustc 1.99.0 (b940084d7 2026-09-28)
+windows	Build the serde_hkx FFI static library	﻿2026-10-12T00:11:36.3108011Z ##[group]Run set -euo pipefail
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3108339Z ^[[36;1mset -euo pipefail^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3108668Z ^[[36;1mgit clone --quiet -c core.autocrlf=false "$SERDE_HKX_REPO" "$RUNNER_TEMP/serde-hkx"^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3109084Z ^[[36;1mgit -C "$RUNNER_TEMP/serde-hkx" checkout --quiet "$SERDE_HKX_SHA"^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3109634Z ^[[36;1mgit -C "$RUNNER_TEMP/serde-hkx" apply --ignore-whitespace --whitespace=nowarn "$GITHUB_WORKSPACE/lib/serdehkx/serde_hkx_ffi-catch-panic.patch"^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3110139Z ^[[36;1mgit -C "$RUNNER_TEMP/serde-hkx" diff --stat^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3110521Z ^[[36;1mcargo build --release -p serde_hkx_ffi --manifest-path "$RUNNER_TEMP/serde-hkx/Cargo.toml"^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3111160Z ^[[36;1mcp "$RUNNER_TEMP/serde-hkx/target/release/serde_hkx_ffi.lib" lib/serdehkx/^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3111468Z ^[[36;1mls -l lib/serdehkx/^[[0m
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3123344Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3123684Z env:
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3123920Z   SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3124224Z   SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3124457Z   XMAKE_VERSION: 3.1.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:36.3124624Z ##[endgroup]
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:42.1272068Z  crates/serde_hkx_ffi/src/lib.rs | 14 ++++++++++++++
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:42.1272434Z  1 file changed, 14 insertions(+)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:42.7812986Z     Updating crates.io index
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.5730077Z  Downloading crates ...
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.7044346Z   Downloaded crossbeam v0.8.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.7140898Z   Downloaded crossbeam-epoch v0.9.20
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.7362236Z   Downloaded annotate-snippets v0.12.16
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.7668975Z   Downloaded cfg-if v1.0.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.7810276Z   Downloaded equivalent v1.0.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.7886081Z   Downloaded heck v0.5.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.8021533Z   Downloaded enum-ordinalize-derive v4.4.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.8146575Z   Downloaded num-derive v0.5.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.8284079Z   Downloaded anstyle v1.0.14
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.8374356Z   Downloaded crossbeam-queue v0.3.13
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.8490266Z   Downloaded autocfg v1.5.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.8613972Z   Downloaded lexical-core v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.8699893Z   Downloaded pin-project-lite v0.2.17
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.9307843Z   Downloaded crossbeam-deque v0.8.7
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.9405318Z   Downloaded enum-ordinalize v4.4.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.9465244Z   Downloaded quote v1.0.47
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.9715077Z   Downloaded either v1.17.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:43.9916664Z   Downloaded lexical v7.0.5
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.0020788Z   Downloaded byteorder v1.5.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.0182491Z   Downloaded snafu-derive v0.9.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.0307008Z   Downloaded arrayvec v0.7.8
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.0487242Z   Downloaded crossbeam-utils v0.8.22
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.0787129Z   Downloaded jwalk v0.8.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.1019942Z   Downloaded lexical-parse-integer v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.1201768Z   Downloaded html-escape v0.2.14
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.1336125Z   Downloaded bitflags v2.13.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.1742166Z   Downloaded unicode-ident v1.0.24
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.1966522Z   Downloaded lexical-write-integer v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.2202042Z   Downloaded num-traits v0.2.19
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.2390797Z   Downloaded proc-macro2 v1.0.107
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.2668809Z   Downloaded serde_core v1.0.229
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.2876655Z   Downloaded rayon-core v1.13.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.3211608Z   Downloaded similar v3.1.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.3473100Z   Downloaded snafu v0.9.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.4136931Z   Downloaded chardetng v1.0.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.4254954Z   Downloaded educe v0.7.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.5196826Z   Downloaded memchr v2.8.3
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.5634685Z   Downloaded crossbeam-channel v0.5.16
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.5989753Z   Downloaded indexmap v2.14.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.6878551Z   Downloaded lexical-write-float v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.7159939Z   Downloaded lexical-util v1.0.7
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.7581687Z   Downloaded hashbrown v0.17.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.7969359Z   Downloaded rayon v1.12.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.8854088Z   Downloaded lexical-parse-float v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:44.9218878Z   Downloaded winnow v1.0.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:45.0049939Z   Downloaded unicode-width v0.2.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:45.0186199Z   Downloaded syn v2.0.119
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:45.1044578Z   Downloaded syn v3.0.3
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:45.1820837Z   Downloaded bstr v1.13.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:45.2293835Z   Downloaded tokio v1.53.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:46.7120181Z   Downloaded encoding_rs v0.8.35
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:47.3114348Z    Compiling proc-macro2 v1.0.107
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:47.3114786Z    Compiling quote v1.0.47
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:47.3115612Z    Compiling unicode-ident v1.0.24
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:47.3116203Z    Compiling crossbeam-utils v0.8.22
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:47.4097058Z    Compiling crossbeam-epoch v0.9.20
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:49.5551444Z    Compiling lexical-util v1.0.7
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:49.5678672Z    Compiling crossbeam-deque v0.8.7
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:49.8390509Z    Compiling rayon-core v1.13.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:50.1083570Z    Compiling either v1.17.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:50.5590211Z    Compiling syn v2.0.119
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:50.6480949Z    Compiling lexical-parse-integer v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:50.6686250Z    Compiling lexical-write-integer v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:51.0776936Z    Compiling lexical-parse-float v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:51.1847062Z    Compiling lexical-write-float v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:51.6902852Z    Compiling memchr v2.8.3
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:51.9043121Z    Compiling lexical-core v1.0.6
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:52.0417645Z    Compiling rayon v1.12.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:53.4296631Z    Compiling lexical v7.0.5
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:53.4958222Z    Compiling syn v3.0.3
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:53.5171645Z    Compiling autocfg v1.5.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:53.9299926Z    Compiling equivalent v1.0.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:53.9887412Z    Compiling hashbrown v0.17.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:54.8560108Z    Compiling indexmap v2.14.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:55.2312782Z    Compiling num-traits v0.2.19
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:55.4307585Z    Compiling havok_types v2.0.0 (D:\a\_temp\serde-hkx\crates\havok_types)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:55.6295813Z    Compiling enum-ordinalize-derive v4.4.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:56.2264386Z    Compiling anstyle v1.0.14
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:56.4524105Z    Compiling unicode-width v0.2.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:56.7189908Z    Compiling arrayvec v0.7.8
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:56.9610010Z    Compiling cfg-if v1.0.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:56.9962939Z    Compiling heck v0.5.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:57.0025997Z    Compiling havok_types_derive_proc_macros v0.1.0 (D:\a\_temp\serde-hkx\crates\havok_types_derive\src\proc_macros)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:57.1856907Z    Compiling snafu-derive v0.9.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:58.4593355Z    Compiling enum-ordinalize v4.4.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:58.4789557Z    Compiling encoding_rs v0.8.35
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:58.5017111Z    Compiling educe v0.7.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:58.7912536Z    Compiling havok_serde v2.0.0 (D:\a\_temp\serde-hkx\crates\havok_serde)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:11:59.4254352Z    Compiling annotate-snippets v0.12.16
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:00.1205333Z    Compiling winnow v1.0.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:01.9388049Z    Compiling crossbeam-queue v0.3.13
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:02.1151408Z    Compiling crossbeam-channel v0.5.16
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:02.1411098Z    Compiling winnow_ext v0.1.0 (D:\a\_temp\serde-hkx\crates\winnow_ext)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:02.9779899Z    Compiling crossbeam v0.8.4
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:03.0322526Z    Compiling chardetng v1.0.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:03.5073559Z    Compiling snafu v0.9.2
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:04.1401560Z    Compiling havok_types_derive v2.0.0 (D:\a\_temp\serde-hkx\crates\havok_types_derive)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:04.1926594Z    Compiling num-derive v0.5.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:04.2953115Z    Compiling pin-project-lite v0.2.17
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:04.3643775Z    Compiling html-escape v0.2.14
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.2138961Z    Compiling byteorder v1.5.0
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.4549681Z    Compiling bitflags v2.13.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.4787439Z    Compiling serde_hkx v2.0.0 (D:\a\_temp\serde-hkx\serde_hkx)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.6937809Z warning: use of deprecated constant `std::f32::NAN`: replaced by the `NAN` associated constant on `f32`
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.6956791Z   --> serde_hkx\src\xml\de\parser\type_kind.rs:87:17
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.6958345Z    |
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.6959253Z 87 |     .value(f32::NAN);
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.6984287Z    |                 ^^^
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.6999726Z    |
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7124057Z    = note: `#[warn(deprecated)]` on by default
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7124414Z 
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7139715Z warning: use of deprecated constant `std::f32::INFINITY`: replaced by the `INFINITY` associated constant on `f32`
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7142083Z   --> serde_hkx\src\xml\de\parser\type_kind.rs:88:69
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7142833Z    |
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7144208Z 88 |     let pos_inf = alt(("1.#INF00", "1.#INF0", "1.#INF")).value(f32::INFINITY);
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7260398Z    |                                                                     ^^^^^^^^
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7440885Z 
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7443111Z warning: use of deprecated constant `std::f32::NEG_INFINITY`: replaced by the `NEG_INFINITY` associated constant on `f32`
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7444282Z   --> serde_hkx\src\xml\de\parser\type_kind.rs:89:72
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7445727Z    |
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7459029Z 89 |     let neg_inf = alt(("-1.#INF00", "-1.#INF0", "-1.#INF")).value(f32::NEG_INFINITY);
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7569390Z    |                                                                        ^^^^^^^^^^^^
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7570651Z 
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.7571357Z    Compiling havok_classes v2.0.0 (D:\a\_temp\serde-hkx\crates\havok_classes)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:05.8903655Z    Compiling tokio v1.53.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:07.1443474Z    Compiling auto_charset v0.1.0 (D:\a\_temp\serde-hkx\crates\auto_charset)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:07.2552776Z    Compiling jwalk v0.8.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:07.6503352Z    Compiling similar v3.1.1
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:12.5374874Z warning: `serde_hkx` (lib) generated 3 warnings
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:34.1057150Z    Compiling serde_hkx_features v2.0.0 (D:\a\_temp\serde-hkx\crates\serde_hkx_features)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:12:56.6979989Z    Compiling serde_hkx_ffi v2.0.0 (D:\a\_temp\serde-hkx\crates\serde_hkx_ffi)
+windows	Build the serde_hkx FFI static library	2026-10-12T00:13:31.2878061Z     Finished `release` profile [optimized] target(s) in 1m 48s
+windows	Build the serde_hkx FFI static library	2026-10-12T00:13:31.4404639Z total 57180
+windows	Build the serde_hkx FFI static library	2026-10-12T00:13:31.4406160Z -rw-r--r-- 1 runneradmin 197121      959 Oct 12 00:10 serde_hkx_ffi-catch-panic.patch
+windows	Build the serde_hkx FFI static library	2026-10-12T00:13:31.4406940Z -rw-r--r-- 1 runneradmin 197121     3286 Oct 12 00:10 serde_hkx_ffi.h
+windows	Build the serde_hkx FFI static library	2026-10-12T00:13:31.4407592Z -rw-r--r-- 1 runneradmin 197121 58542950 Oct 12 00:13 serde_hkx_ffi.lib
+windows	Build the plugin	﻿2026-10-12T00:13:31.4577876Z ##[group]Run set -euo pipefail
+windows	Build the plugin	2026-10-12T00:13:31.4578269Z ^[[36;1mset -euo pipefail^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.4578515Z ^[[36;1mxmake --version^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.4578997Z ^[[36;1mxmake f -y -p windows -a x64 -m releasedbg^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.4579350Z ^[[36;1mxmake build -y^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.4579766Z ^[[36;1mls -l build/windows/x64/releasedbg/^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.4590301Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+windows	Build the plugin	2026-10-12T00:13:31.4590656Z env:
+windows	Build the plugin	2026-10-12T00:13:31.4590936Z   SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+windows	Build the plugin	2026-10-12T00:13:31.4591310Z   SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+windows	Build the plugin	2026-10-12T00:13:31.4591603Z   XMAKE_VERSION: 3.1.1
+windows	Build the plugin	2026-10-12T00:13:31.4591844Z ##[endgroup]
+windows	Build the plugin	2026-10-12T00:13:31.6248290Z ^[[0m^[[1mxmake v3.1.1+HEAD.3ba37a0d4, A cross-platform build utility based on Lua^[[0m^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.6249620Z ^[[0mCopyright (C) 2015-present Ruki Wang, ^[[4mhttps://xmake.io^[[0m^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.6258777Z ^[[0m^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m_
+windows	Build the plugin	2026-10-12T00:13:31.6260667Z ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m_^[[1;38;5;41m_^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m_^[[1;38;5;41m_^[[1;38;5;41m_^[[1;38;5;41m ^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m ^[[1;38;5;42m_^[[1;38;5;42m|^[[1;38;5;42m ^[[1;38;5;42m|^[[1;38;5;42m ^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m_
+windows	Build the plugin	2026-10-12T00:13:31.6262675Z ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m\^[[1;38;5;41m ^[[1;38;5;41m\^[[1;38;5;41m/^[[1;38;5;41m ^[[1;38;5;41m/^[[1;38;5;41m ^[[1;38;5;41m|^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m\^[[1;38;5;42m/^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m|^[[1;38;5;42m/^[[1;38;5;42m ^[[1;38;5;42m_^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m|^[[1;38;5;42m ^[[1;38;5;42m|^[[1;38;5;42m/^[[1;38;5;42m ^[[1;38;5;42m/^[[1;38;5;42m ^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m ^[[1;38;5;42m\
+windows	Build the plugin	2026-10-12T00:13:31.6264503Z ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m>^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m<^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m|^[[1;38;5;42m ^[[1;38;5;42m\^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m/^[[1;38;5;42m ^[[1;38;5;42m|^[[1;38;5;42m ^[[1;38;5;42m/^[[1;38;5;42m_^[[1;38;5;42m|^[[1;38;5;42m ^[[1;38;5;42m|^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m<^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m/
+windows	Build the plugin	2026-10-12T00:13:31.6266815Z ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m/^[[1;38;5;41m_^[[1;38;5;41m/^[[1;38;5;41m\^[[1;38;5;41m_^[[1;38;5;41m\^[[1;38;5;41m_^[[1;38;5;41m|^[[1;38;5;42m_^[[1;38;5;42m|^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m|^[[1;38;5;42m_^[[1;38;5;42m|^[[1;38;5;42m\^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m ^[[1;38;5;42m\^[[1;38;5;42m|^[[1;38;5;42m_^[[1;38;5;42m|^[[1;38;5;42m\^[[1;38;5;42m_^[[1;38;5;42m\^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m_^[[1;38;5;42m|
+windows	Build the plugin	2026-10-12T00:13:31.6268580Z ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;41m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42m ^[[1;38;5;42mb^[[1;38;5;42my^[[1;38;5;42m ^[[1;38;5;42mr^[[1;38;5;42mu^[[1;38;5;42mk^[[1;38;5;42mi^[[1;38;5;42m,^[[1;38;5;42m ^[[1;38;5;42mx^[[1;38;5;42mm^[[1;38;5;42ma^[[1;38;5;42mk^[[1;38;5;42me^[[1;38;5;42m.^[[1;38;5;42mi^[[1;38;5;42mo^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.6270022Z ^[[0m    👉  ^[[1mManual^[[0m: ^[[4mhttps://xmake.io/guide/quick-start^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.6270963Z     🙏  ^[[1mDonate^[[0m: ^[[4mhttps://xmake.io/about/sponsor^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.6273046Z ^[[0m
+windows	Build the plugin	2026-10-12T00:13:31.8805016Z ^[[0m^[[38;5;3;1mDetecting Visual Studio environment (cached); run `xmake global --clean` first if vs updated.^[[0m
+windows	Build the plugin	2026-10-12T00:13:36.6200769Z ^[[0mchecking for Microsoft C/C++ Compiler (x64) ... ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:13:36.6201684Z ^[[0mchecking for Microsoft Visual Studio (x64) version ... ^[[38;5;2;1m2026^[[0m
+windows	Build the plugin	2026-10-12T00:13:54.8706692Z updating repositories .. ^[[0m^[[38;5;2mok^[[0m
+windows	Build the plugin	2026-10-12T00:13:59.5201825Z ^[[0m^[[38;5;3m  => ^[[0mdownload https://github.com/microsoft/DirectXMath/archive/refs/tags/feb2024.zip .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:13:59.5839736Z ^[[0m^[[38;5;3m  => ^[[0mdownload https://github.com/xmake-mirror/build-artifacts/releases/download/directxtk-24.2.0/windows-x64-vc14.38.33130-f6fb9eaf439246fdb823f48a8816ec0c.7z .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:00.1578344Z ^[[0m^[[38;5;3m  => ^[[0mdownload https://github.com/d99kris/rapidcsv/archive/refs/tags/v8.92.zip .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:00.6082755Z ^[[0m^[[38;5;3m  => ^[[0mdownload https://github.com/gabime/spdlog/archive/refs/tags/v1.16.0.zip .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:06.5477572Z ^[[0m^[[38;5;3m  => ^[[0minstall rapidcsv v8.92 .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:08.1617891Z ^[[0m^[[38;5;3m  => ^[[0minstall directxtk 24.2.0 ^[[2m(precompiled)^[[0m .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:10.8050624Z ^[[0m^[[38;5;3m  => ^[[0minstall directxmath 2024.02 .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:22.7785851Z ^[[0m^[[38;5;3m  => ^[[0minstall spdlog v1.16.0 .. ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:25.3963733Z ^[[0mgenerating D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix\lib\commonlibsse-ng\res\commonlibsse-ng-plugin.cpp.in ... ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:25.4943178Z ^[[0mgenerating D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix\lib\commonlibsse-ng\res\commonlib-plugin.rc.in ... ^[[38;5;2;1mok^[[0m
+windows	Build the plugin	2026-10-12T00:14:27.1261592Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m compiling.releasedbg build\.gens\APoseFix\windows\x64\releasedbg\src\pch.h^[[0m
+windows	Build the plugin	2026-10-12T00:14:27.8405515Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg build\.gens\commonlibsse-ng\windows\x64\releasedbg\ee6c3a3d0aa132f431d02054a040b6d7\PCH.h^[[0m
+windows	Build the plugin	2026-10-12T00:14:32.2347594Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ActiveEffectFactory.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:32.2386104Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\Actor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:32.2433590Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ActorEquipManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:32.2540574Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ActorKill.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:32.2655989Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ActiveEffect.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:39.7477936Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ActorValueList.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:40.1630234Z ^[[0m^[[38;5;2;1m[  0%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ActorValueOwner.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:40.3890941Z ^[[0m^[[38;5;2;1m[  1%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\AddCallbackVisitor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:41.4009889Z ^[[0m^[[38;5;2;1m[  1%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\AIFormulas.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:42.0963849Z ^[[0m^[[38;5;2;1m[  1%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\AIProcess.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:47.4135309Z ^[[0m^[[38;5;2;1m[  1%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\AITimer.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:48.2001352Z ^[[0m^[[38;5;2;1m[  1%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\AnimationClipDataSingleton.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:49.6720799Z ^[[0m^[[38;5;2;1m[  1%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\AnimationSystemUtils.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:53.9318571Z ^[[0m^[[38;5;2;1m[  2%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ArmorRatingVisitor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:56.2169852Z ^[[0m^[[38;5;2;1m[  2%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\ArmorRatingVisitorBase.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:57.1798539Z ^[[0m^[[38;5;2;1m[  2%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\Array.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:57.5204758Z ^[[0m^[[38;5;2;1m[  2%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\A\AutoVanityState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:14:59.1207448Z ^[[0m^[[38;5;2;1m[  2%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BarterMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:00.5224599Z ^[[0m^[[38;5;2;1m[  3%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BeamProjectile.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:00.8887421Z ^[[0m^[[38;5;2;1m[  3%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSAcousticSpace.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:03.7237485Z ^[[0m^[[38;5;2;1m[  3%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSAttackData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:04.7089092Z ^[[0m^[[38;5;2;1m[  3%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSAutoWater.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:05.5311762Z ^[[0m^[[38;5;2;1m[  3%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSBaseAlias.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:06.1459120Z ^[[0m^[[38;5;2;1m[  3%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSBipedObjectForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:06.6062976Z ^[[0m^[[38;5;2;1m[  4%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSColorForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:07.9567846Z ^[[0m^[[38;5;2;1m[  4%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSConstructibleObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:08.5009696Z ^[[0m^[[38;5;2;1m[  4%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSCreatedObjectManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:08.8882642Z ^[[0m^[[38;5;2;1m[  4%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSDebris.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:08.9118430Z ^[[0m^[[38;5;2;1m[  4%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSDecalNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:08.9240718Z ^[[0m^[[38;5;2;1m[  5%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSDefaultObjectManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:10.0625928Z ^[[0m^[[38;5;2;1m[  5%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSDistantObjectBlock.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:14.8022680Z ^[[0m^[[38;5;2;1m[  5%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSDistantTreeBlock.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:17.2879999Z ^[[0m^[[38;5;2;1m[  5%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSEntryPointFunctionDataActivateChoice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:17.9110097Z ^[[0m^[[38;5;2;1m[  5%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSEntryPointPerkEntry.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:18.4842627Z ^[[0m^[[38;5;2;1m[  5%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSFootstepManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:18.9864662Z ^[[0m^[[38;5;2;1m[  6%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSHeadPart.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:19.6236825Z ^[[0m^[[38;5;2;1m[  6%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSIdleCollection.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:19.9364284Z ^[[0m^[[38;5;2;1m[  6%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSKeyword.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:20.4077224Z ^[[0m^[[38;5;2;1m[  6%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSKeywordForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:21.4639068Z ^[[0m^[[38;5;2;1m[  6%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSListForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:22.1112018Z ^[[0m^[[38;5;2;1m[  7%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSLocation.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:24.8363069Z ^[[0m^[[38;5;2;1m[  7%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSOpenCloseForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:28.7210837Z ^[[0m^[[38;5;2;1m[  7%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSPerkEntry.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:29.2114772Z ^[[0m^[[38;5;2;1m[  7%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSPerkRankArray.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:29.6770125Z ^[[0m^[[38;5;2;1m[  7%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSRefAlias.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:30.3520235Z ^[[0m^[[38;5;2;1m[  7%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSSaveLoadManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:30.3692294Z ^[[0m^[[38;5;2;1m[  8%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSSkillPerkTreeNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:30.4434669Z ^[[0m^[[38;5;2;1m[  8%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSSoundCategory.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:30.5161507Z ^[[0m^[[38;5;2;1m[  8%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSStoryTeller.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:32.7131589Z ^[[0m^[[38;5;2;1m[  8%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSTerrainChunk.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:34.0321518Z ^[[0m^[[38;5;2;1m[  8%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BGSTerrainManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:36.8232893Z ^[[0m^[[38;5;2;1m[  9%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\bhkCharProxyController.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:38.0558139Z ^[[0m^[[38;5;2;1m[  9%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\bhkRigidBody.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:38.8884180Z ^[[0m^[[38;5;2;1m[  9%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BipedAnim.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:40.2435902Z ^[[0m^[[38;5;2;1m[  9%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BleedoutCameraState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:40.5826514Z ^[[0m^[[38;5;2;1m[  9%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BookMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:41.8988100Z ^[[0m^[[38;5;2;1m[  9%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BooksRead.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:43.2278213Z ^[[0m^[[38;5;2;1m[ 10%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSAtomic.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:47.5609797Z ^[[0m^[[38;5;2;1m[ 10%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSAudioManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:49.7609688Z ^[[0m^[[38;5;2;1m[ 10%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSCompoundFrustum.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:49.9900530Z ^[[0m^[[38;5;2;1m[ 10%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSCubeMapCamera.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:50.5046712Z ^[[0m^[[38;5;2;1m[ 10%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSCullingProcess.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:52.0943082Z ^[[0m^[[38;5;2;1m[ 11%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSDirectInputManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:15:58.9948662Z ^[[0m^[[38;5;2;1m[ 11%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSEffectShaderData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:01.2042584Z ^[[0m^[[38;5;2;1m[ 11%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:01.6145145Z ^[[0m^[[38;5;2;1m[ 11%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSFaceGenAnimationData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:02.1527947Z ^[[0m^[[38;5;2;1m[ 11%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSFaceGenKeyframeMultiple.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:02.2898197Z ^[[0m^[[38;5;2;1m[ 11%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSFaceGenNiNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:03.0115869Z ^[[0m^[[38;5;2;1m[ 12%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSFadeNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:07.8337825Z ^[[0m^[[38;5;2;1m[ 12%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSFixedString.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:11.2592236Z ^[[0m^[[38;5;2;1m[ 12%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSGamepadDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:11.3247642Z ^[[0m^[[38;5;2;1m[ 12%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSGameSound.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:12.5601991Z ^[[0m^[[38;5;2;1m[ 12%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSGeometry.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:13.0778771Z ^[[0m^[[38;5;2;1m[ 13%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSHandleRefObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:13.9753645Z ^[[0m^[[38;5;2;1m[ 13%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSImagespaceShader.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:17.2362610Z ^[[0m^[[38;5;2;1m[ 13%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSInputDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:20.8211267Z ^[[0m^[[38;5;2;1m[ 13%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSInputDeviceFactory.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:21.5055782Z ^[[0m^[[38;5;2;1m[ 13%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSInputDeviceManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:23.3534504Z ^[[0m^[[38;5;2;1m[ 13%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSInputEventQueue.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:23.8510448Z ^[[0m^[[38;5;2;1m[ 14%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSInstanceTriShape.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:24.2772556Z ^[[0m^[[38;5;2;1m[ 14%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSInvMarker.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:26.8328170Z ^[[0m^[[38;5;2;1m[ 14%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSIStream.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:28.8755805Z ^[[0m^[[38;5;2;1m[ 14%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSKeyboardDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:29.6081955Z ^[[0m^[[38;5;2;1m[ 14%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSLeafAnimNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:31.7740782Z ^[[0m^[[38;5;2;1m[ 15%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSLightingShaderMaterialBase.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:32.5468739Z ^[[0m^[[38;5;2;1m[ 15%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSLightingShaderProperty.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:33.6766682Z ^[[0m^[[38;5;2;1m[ 15%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSModelDB.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:35.3407167Z ^[[0m^[[38;5;2;1m[ 15%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSMouseDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:40.2714277Z ^[[0m^[[38;5;2;1m[ 15%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSMultiBoundNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:40.9617652Z ^[[0m^[[38;5;2;1m[ 15%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSMultiStreamInstanceTriShape.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:42.5840828Z ^[[0m^[[38;5;2;1m[ 16%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSOcclusionPlane.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:42.6595264Z ^[[0m^[[38;5;2;1m[ 16%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSOpenVR.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:42.6733401Z ^[[0m^[[38;5;2;1m[ 16%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSParticleSystemManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:42.6990774Z ^[[0m^[[38;5;2;1m[ 16%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPathingLocation.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:42.9156246Z ^[[0m^[[38;5;2;1m[ 16%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPathingRequest.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:43.8442905Z ^[[0m^[[38;5;2;1m[ 17%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPCGamepadDeviceDelegate.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:44.0690633Z ^[[0m^[[38;5;2;1m[ 17%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPCGamepadDeviceHandler.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:49.8753820Z ^[[0m^[[38;5;2;1m[ 17%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPCOrbisGamepadDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:51.9757506Z ^[[0m^[[38;5;2;1m[ 17%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPointerHandle.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:52.6815063Z ^[[0m^[[38;5;2;1m[ 17%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPortalGraph.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:52.8724117Z ^[[0m^[[38;5;2;1m[ 17%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSPortalGraphEntry.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:54.5184546Z ^[[0m^[[38;5;2;1m[ 18%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSProceduralLightningController.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:54.8286832Z ^[[0m^[[38;5;2;1m[ 18%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSProceduralLightningTasklet.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:55.4266956Z ^[[0m^[[38;5;2;1m[ 18%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSResourceNiBinaryStream.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:16:57.5287029Z ^[[0m^[[38;5;2;1m[ 18%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSResponse.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:03.0047142Z ^[[0m^[[38;5;2;1m[ 18%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSScaleformManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:03.7546547Z ^[[0m^[[38;5;2;1m[ 19%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSScaleformTranslator.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:04.6473931Z ^[[0m^[[38;5;2;1m[ 19%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSScriptObjectBindPolicy.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:05.1039437Z ^[[0m^[[38;5;2;1m[ 19%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSShaderAccumulator.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:05.2282375Z ^[[0m^[[38;5;2;1m[ 19%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSShaderProperty.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:08.1310048Z ^[[0m^[[38;5;2;1m[ 19%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSShaderTextureSet.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:12.2865945Z ^[[0m^[[38;5;2;1m[ 19%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSSoundHandle.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:14.5774790Z ^[[0m^[[38;5;2;1m[ 20%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSStringPool.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:16.0162327Z ^[[0m^[[38;5;2;1m[ 20%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSSystemFileStorage.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:16.3651555Z ^[[0m^[[38;5;2;1m[ 20%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSTArray.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:19.0319580Z ^[[0m^[[38;5;2;1m[ 20%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSTCreateFactoryManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:19.8876137Z ^[[0m^[[38;5;2;1m[ 20%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSTempNodeManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:20.4326317Z ^[[0m^[[38;5;2;1m[ 21%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSTreeNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:20.8289868Z ^[[0m^[[38;5;2;1m[ 21%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSUIMessageData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:22.2021743Z ^[[0m^[[38;5;2;1m[ 21%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSVirtualKeyboardDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:23.8778124Z ^[[0m^[[38;5;2;1m[ 21%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSVisit.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:27.5857404Z ^[[0m^[[38;5;2;1m[ 21%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSWin32GamepadDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:27.7057862Z ^[[0m^[[38;5;2;1m[ 21%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSWin32KeyboardDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:29.0270808Z ^[[0m^[[38;5;2;1m[ 22%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSWin32MouseDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:29.7299397Z ^[[0m^[[38;5;2;1m[ 22%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSWin32SaveDataSystemUtility.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:30.8214741Z ^[[0m^[[38;5;2;1m[ 22%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSWin32VirtualKeyboardDevice.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:34.0660173Z ^[[0m^[[38;5;2;1m[ 22%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSWindModifier.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:35.8036212Z ^[[0m^[[38;5;2;1m[ 22%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSXAudio2GameSound.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:36.1777739Z ^[[0m^[[38;5;2;1m[ 23%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\B\BSXFlags.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:36.6768973Z ^[[0m^[[38;5;2;1m[ 23%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\Calendar.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:38.3466198Z ^[[0m^[[38;5;2;1m[ 23%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CFilter.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:39.0002036Z ^[[0m^[[38;5;2;1m[ 23%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ChainExplosion.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:39.3447561Z ^[[0m^[[38;5;2;1m[ 23%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ChestsLooted.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:41.2357763Z ^[[0m^[[38;5;2;1m[ 23%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ChildSelectorBase.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:41.5705535Z ^[[0m^[[38;5;2;1m[ 24%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CollisionLayers.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:42.4318746Z ^[[0m^[[38;5;2;1m[ 24%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\Color.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:42.8487257Z ^[[0m^[[38;5;2;1m[ 24%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ColorUtil.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:43.7144168Z ^[[0m^[[38;5;2;1m[ 24%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatAcquireItem.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:43.8591208Z ^[[0m^[[38;5;2;1m[ 24%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatAimController.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:45.6401779Z ^[[0m^[[38;5;2;1m[ 25%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatAnimation.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:46.3231133Z ^[[0m^[[38;5;2;1m[ 25%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehavior.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:46.4488968Z ^[[0m^[[38;5;2;1m[ 25%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorAccessors.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:46.9516666Z ^[[0m^[[38;5;2;1m[ 25%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorAcquireItem.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:47.8955885Z ^[[0m^[[38;5;2;1m[ 25%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorAcquireResource.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:53.0484892Z ^[[0m^[[38;5;2;1m[ 25%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorAdvance.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:55.8451731Z ^[[0m^[[38;5;2;1m[ 26%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorBackoff.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:56.2850008Z ^[[0m^[[38;5;2;1m[ 26%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorBlock.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:56.7850046Z ^[[0m^[[38;5;2;1m[ 26%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorBlockAttack.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:57.2009873Z ^[[0m^[[38;5;2;1m[ 26%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorChildSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:58.3896389Z ^[[0m^[[38;5;2;1m[ 26%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorCircle.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:17:59.1512189Z ^[[0m^[[38;5;2;1m[ 27%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorCircleDistant.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:02.3935882Z ^[[0m^[[38;5;2;1m[ 27%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContext.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:05.4783302Z ^[[0m^[[38;5;2;1m[ 27%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextAcquireWeapon.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:06.0341690Z ^[[0m^[[38;5;2;1m[ 27%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextBlock.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:06.1473701Z ^[[0m^[[38;5;2;1m[ 27%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextCloseMovement.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:06.1628735Z ^[[0m^[[38;5;2;1m[ 27%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextDodgeThreat.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:08.4611089Z ^[[0m^[[38;5;2;1m[ 28%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextFlankingMovement.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:09.8672986Z ^[[0m^[[38;5;2;1m[ 28%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextFlee.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:13.4046170Z ^[[0m^[[38;5;2;1m[ 28%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextMagic.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:14.3438987Z ^[[0m^[[38;5;2;1m[ 28%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextMelee.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:15.8437042Z ^[[0m^[[38;5;2;1m[ 28%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextRangedMovement.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:16.1308062Z ^[[0m^[[38;5;2;1m[ 29%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextSearch.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:17.3948821Z ^[[0m^[[38;5;2;1m[ 29%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorContextShout.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:19.7905565Z ^[[0m^[[38;5;2;1m[ 29%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorController.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:20.5626359Z ^[[0m^[[38;5;2;1m[ 29%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorDodgeThreat.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:22.5736474Z ^[[0m^[[38;5;2;1m[ 29%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorDynamicConditionalNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:23.2865630Z ^[[0m^[[38;5;2;1m[ 29%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorEquipContext.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:24.2798709Z ^[[0m^[[38;5;2;1m[ 30%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorFallback.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:26.9398932Z ^[[0m^[[38;5;2;1m[ 30%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorFallbackSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:29.6419138Z ^[[0m^[[38;5;2;1m[ 30%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorFallbackToRanged.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:30.5399086Z ^[[0m^[[38;5;2;1m[ 30%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorFindWeapon.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:31.1468480Z ^[[0m^[[38;5;2;1m[ 30%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorIdle.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:31.9079769Z ^[[0m^[[38;5;2;1m[ 31%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorParallel.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:32.5073073Z ^[[0m^[[38;5;2;1m[ 31%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorPause.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:34.0033869Z ^[[0m^[[38;5;2;1m[ 31%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorRepeat.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:34.8417115Z ^[[0m^[[38;5;2;1m[ 31%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorReposition.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:37.7140206Z ^[[0m^[[38;5;2;1m[ 31%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorResource.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:39.0450536Z ^[[0m^[[38;5;2;1m[ 31%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorSequence.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:41.6434904Z ^[[0m^[[38;5;2;1m[ 32%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorSpawnParallel.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:42.1180337Z ^[[0m^[[38;5;2;1m[ 32%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorStack.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:44.3254661Z ^[[0m^[[38;5;2;1m[ 32%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorSurround.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:45.4640248Z ^[[0m^[[38;5;2;1m[ 32%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorThread.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:47.9886288Z ^[[0m^[[38;5;2;1m[ 32%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTree.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:49.7819441Z ^[[0m^[[38;5;2;1m[ 33%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTreeLinkNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:50.9476500Z ^[[0m^[[38;5;2;1m[ 33%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTreeManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:51.4723987Z ^[[0m^[[38;5;2;1m[ 33%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTreeNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:53.1106104Z ^[[0m^[[38;5;2;1m[ 33%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTreeNodeEvaluateFunction.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:54.9689956Z ^[[0m^[[38;5;2;1m[ 33%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTreeNodeObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:56.0353527Z ^[[0m^[[38;5;2;1m[ 33%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTreeRootNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:18:58.8666990Z ^[[0m^[[38;5;2;1m[ 34%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTrees.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:00.9618626Z ^[[0m^[[38;5;2;1m[ 34%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBehaviorTreeUtils.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:01.8384587Z ^[[0m^[[38;5;2;1m[ 34%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBlackboard.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:02.0652479Z ^[[0m^[[38;5;2;1m[ 34%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBlackboardFlag.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:02.5276836Z ^[[0m^[[38;5;2;1m[ 34%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatBlackboardManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:05.0623099Z ^[[0m^[[38;5;2;1m[ 35%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatController.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:05.9113455Z ^[[0m^[[38;5;2;1m[ 35%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatGroup.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:06.8241715Z ^[[0m^[[38;5;2;1m[ 35%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatInventory.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:07.8718520Z ^[[0m^[[38;5;2;1m[ 35%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatPath.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:10.5740983Z ^[[0m^[[38;5;2;1m[ 35%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:11.7569203Z ^[[0m^[[38;5;2;1m[ 35%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatTargetLocation.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:14.1339729Z ^[[0m^[[38;5;2;1m[ 36%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatTargetLocationSearch.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:14.7999103Z ^[[0m^[[38;5;2;1m[ 36%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatTargetLocationSearchResult.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:15.2256443Z ^[[0m^[[38;5;2;1m[ 36%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CombatThreat.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:16.0791331Z ^[[0m^[[38;5;2;1m[ 36%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CommandTable.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:16.3696150Z ^[[0m^[[38;5;2;1m[ 36%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ConditionalChildSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:16.8748927Z ^[[0m^[[38;5;2;1m[ 37%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ConeProjectile.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:17.3347647Z ^[[0m^[[38;5;2;1m[ 37%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\Console.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:19.8495374Z ^[[0m^[[38;5;2;1m[ 37%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ConsoleLog.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:22.9326556Z ^[[0m^[[38;5;2;1m[ 37%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ContainerItemExtra.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:25.6504737Z ^[[0m^[[38;5;2;1m[ 37%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ContainerMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:26.5039028Z ^[[0m^[[38;5;2;1m[ 37%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\ControlMap.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:26.7646496Z ^[[0m^[[38;5;2;1m[ 38%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\C\CriticalHit.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:27.0050994Z ^[[0m^[[38;5;2;1m[ 38%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\D\DisarmedEvent.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:28.0902990Z ^[[0m^[[38;5;2;1m[ 38%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\D\DragonCameraState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:29.4961444Z ^[[0m^[[38;5;2;1m[ 38%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\D\DragonSoulsGained.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:36.0851573Z ^[[0m^[[38;5;2;1m[ 38%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\Effect.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:36.4628993Z ^[[0m^[[38;5;2;1m[ 39%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\EffectSetting.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:37.3347364Z ^[[0m^[[38;5;2;1m[ 39%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\EnchantConstructMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:37.7624662Z ^[[0m^[[38;5;2;1m[ 39%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\Explosion.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:39.8099695Z ^[[0m^[[38;5;2;1m[ 39%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraAliasInstanceArray.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:41.2988412Z ^[[0m^[[38;5;2;1m[ 39%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraAshPileRef.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:48.1710712Z ^[[0m^[[38;5;2;1m[ 39%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraCannotWear.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:49.5263125Z ^[[0m^[[38;5;2;1m[ 40%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraCanTalkToPlayer.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:50.6036569Z ^[[0m^[[38;5;2;1m[ 40%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraCharge.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:50.7857438Z ^[[0m^[[38;5;2;1m[ 40%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraContainerChanges.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:54.3848000Z ^[[0m^[[38;5;2;1m[ 40%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraCount.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:19:56.1917432Z ^[[0m^[[38;5;2;1m[ 40%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraDataList.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:00.4688408Z ^[[0m^[[38;5;2;1m[ 41%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraEnchantment.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:02.3028597Z ^[[0m^[[38;5;2;1m[ 41%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraEncounterZone.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:03.4098013Z ^[[0m^[[38;5;2;1m[ 41%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraForcedTarget.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:04.3846553Z ^[[0m^[[38;5;2;1m[ 41%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraHealth.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:10.1238007Z ^[[0m^[[38;5;2;1m[ 41%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraHotkey.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:12.0261716Z ^[[0m^[[38;5;2;1m[ 41%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraLevCreaModifier.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:14.4150531Z ^[[0m^[[38;5;2;1m[ 42%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraLightData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:14.6633751Z ^[[0m^[[38;5;2;1m[ 42%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraLinkedRef.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:18.1991941Z ^[[0m^[[38;5;2;1m[ 42%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraLock.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:20.1114923Z ^[[0m^[[38;5;2;1m[ 42%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraMissingLinkedRefIDs.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:24.4363812Z ^[[0m^[[38;5;2;1m[ 42%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraNorthRotation.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:26.2007987Z ^[[0m^[[38;5;2;1m[ 43%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraOwnership.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:27.5492234Z ^[[0m^[[38;5;2;1m[ 43%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraPoison.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:28.2897356Z ^[[0m^[[38;5;2;1m[ 43%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraRank.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:30.1420918Z ^[[0m^[[38;5;2;1m[ 43%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraReferenceHandle.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:33.0454188Z ^[[0m^[[38;5;2;1m[ 43%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraSoul.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:34.0145497Z ^[[0m^[[38;5;2;1m[ 43%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraTextDisplayData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:35.8669455Z ^[[0m^[[38;5;2;1m[ 44%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\E\ExtraUniqueID.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:37.0226096Z ^[[0m^[[38;5;2;1m[ 44%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\F\FindMaxMagnitudeVisitor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:38.1239940Z ^[[0m^[[38;5;2;1m[ 44%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\F\FirstPersonState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:41.1875575Z ^[[0m^[[38;5;2;1m[ 44%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\F\FormTypes.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:42.5925085Z ^[[0m^[[38;5;2;1m[ 44%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\F\FurnitureCameraState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:43.2073843Z ^[[0m^[[38;5;2;1m[ 45%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\F\FxDelegate.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:46.0054671Z ^[[0m^[[38;5;2;1m[ 45%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\F\FxDelegateArgs.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:47.1880597Z ^[[0m^[[38;5;2;1m[ 45%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GameSettingCollection.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:47.6436603Z ^[[0m^[[38;5;2;1m[ 45%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GAtomic.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:48.1212560Z ^[[0m^[[38;5;2;1m[ 45%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GetWornMaskVisitor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:48.3901120Z ^[[0m^[[38;5;2;1m[ 45%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxLoader.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:49.0286001Z ^[[0m^[[38;5;2;1m[ 46%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxLog.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:49.3519242Z ^[[0m^[[38;5;2;1m[ 46%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxMovie.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:50.2068770Z ^[[0m^[[38;5;2;1m[ 46%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxMovieDataDef.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:51.0039859Z ^[[0m^[[38;5;2;1m[ 46%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxMovieDef.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:52.8935631Z ^[[0m^[[38;5;2;1m[ 46%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxMovieView.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:53.4154428Z ^[[0m^[[38;5;2;1m[ 47%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxRenderConfig.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:53.8012599Z ^[[0m^[[38;5;2;1m[ 47%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxResource.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:54.3317754Z ^[[0m^[[38;5;2;1m[ 47%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxResourceID.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.0248139Z ^[[0m^[[38;5;2;1m[ 47%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxResourceKey.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.3410861Z ^[[0m^[[38;5;2;1m[ 47%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.6074453Z ^[[0m^[[38;5;2;1m[ 47%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxStateBag.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.6766380Z ^[[0m^[[38;5;2;1m[ 48%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxTranslator.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.7053883Z ^[[0m^[[38;5;2;1m[ 48%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxValue.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.7801916Z ^[[0m^[[38;5;2;1m[ 48%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxWStringBuffer.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.8124172Z ^[[0m^[[38;5;2;1m[ 48%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GFxWWHelper.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:55.8291151Z ^[[0m^[[38;5;2;1m[ 48%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GiftMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:56.0125464Z ^[[0m^[[38;5;2;1m[ 49%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GMemory.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:56.0516519Z ^[[0m^[[38;5;2;1m[ 49%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GMemoryHeap.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:56.1794570Z ^[[0m^[[38;5;2;1m[ 49%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GRefCountImpl.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:57.1094474Z ^[[0m^[[38;5;2;1m[ 49%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GRefCountNTSImpl.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:57.8146144Z ^[[0m^[[38;5;2;1m[ 49%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GRenderer.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:59.0153339Z ^[[0m^[[38;5;2;1m[ 49%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GStd.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:20:59.6315922Z ^[[0m^[[38;5;2;1m[ 50%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GString.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:00.0873775Z ^[[0m^[[38;5;2;1m[ 50%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\G\GViewport.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:00.7867067Z ^[[0m^[[38;5;2;1m[ 50%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\Hazard.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:01.4900060Z ^[[0m^[[38;5;2;1m[ 50%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\HeapBlock.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:01.8293787Z ^[[0m^[[38;5;2;1m[ 50%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\HeldStateHandler.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:02.5187162Z ^[[0m^[[38;5;2;1m[ 51%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkBaseTypes.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:03.8707630Z ^[[0m^[[38;5;2;1m[ 51%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkbBehaviorGraph.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:03.9700874Z ^[[0m^[[38;5;2;1m[ 51%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkbBehaviorGraphData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:04.2870005Z ^[[0m^[[38;5;2;1m[ 51%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkbVariableValueSet.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:04.6910458Z ^[[0m^[[38;5;2;1m[ 51%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpAabbPhantom.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:06.1328437Z ^[[0m^[[38;5;2;1m[ 51%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpAddModifierUtil.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:09.8167530Z ^[[0m^[[38;5;2;1m[ 52%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpBroadPhase.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:11.4879570Z ^[[0m^[[38;5;2;1m[ 52%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpCdBody.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:11.5428896Z ^[[0m^[[38;5;2;1m[ 52%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpCharacterProxyListener.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:11.5803665Z ^[[0m^[[38;5;2;1m[ 52%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpCharacterRigidBody.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:11.6263778Z ^[[0m^[[38;5;2;1m[ 52%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpMaterial.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:11.8714600Z ^[[0m^[[38;5;2;1m[ 53%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpProperty.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:11.8772934Z ^[[0m^[[38;5;2;1m[ 53%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpResponseModifier.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:13.4858652Z ^[[0m^[[38;5;2;1m[ 53%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpRigidBody.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:14.4312927Z ^[[0m^[[38;5;2;1m[ 53%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpShapePhantom.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:15.7209542Z ^[[0m^[[38;5;2;1m[ 53%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkpWorldObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:19.1973857Z ^[[0m^[[38;5;2;1m[ 53%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkReferencedObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:20.1730090Z ^[[0m^[[38;5;2;1m[ 54%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkStringPtr.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:20.9255989Z ^[[0m^[[38;5;2;1m[ 54%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\hkVector4.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:22.9382072Z ^[[0m^[[38;5;2;1m[ 54%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\HorseCameraState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:24.2226355Z ^[[0m^[[38;5;2;1m[ 54%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\HUDMeter.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:24.8621651Z ^[[0m^[[38;5;2;1m[ 54%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\H\HUDObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:25.0915385Z ^[[0m^[[38;5;2;1m[ 55%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IAnimationGraphManagerHolder.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:27.0693502Z ^[[0m^[[38;5;2;1m[ 55%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IFormFactory.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:28.6880804Z ^[[0m^[[38;5;2;1m[ 55%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IFunction.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:32.3310677Z ^[[0m^[[38;5;2;1m[ 55%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IHandlerFunctor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:33.9312147Z ^[[0m^[[38;5;2;1m[ 55%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IMemoryStore.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:34.5069653Z ^[[0m^[[38;5;2;1m[ 55%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:34.9353351Z ^[[0m^[[38;5;2;1m[ 56%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IMovementState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:36.3588404Z ^[[0m^[[38;5;2;1m[ 56%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IngredientItem.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:36.7445043Z ^[[0m^[[38;5;2;1m[ 56%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\INIPrefSettingCollection.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:37.6507159Z ^[[0m^[[38;5;2;1m[ 56%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\INISettingCollection.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:39.8210637Z ^[[0m^[[38;5;2;1m[ 56%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\InputEvent.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:41.7624295Z ^[[0m^[[38;5;2;1m[ 57%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\InterfaceStrings.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:43.5003529Z ^[[0m^[[38;5;2;1m[ 57%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\Inventory.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:45.1316781Z ^[[0m^[[38;5;2;1m[ 57%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\Inventory3DManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:47.5211716Z ^[[0m^[[38;5;2;1m[ 57%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\InventoryChanges.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:48.0290964Z ^[[0m^[[38;5;2;1m[ 57%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\InventoryEntryData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:49.7280986Z ^[[0m^[[38;5;2;1m[ 57%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IObjectHandlePolicy.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:50.1898312Z ^[[0m^[[38;5;2;1m[ 58%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IStackCallbackFunctor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:50.9649973Z ^[[0m^[[38;5;2;1m[ 58%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\ItemCrafted.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:51.0087454Z ^[[0m^[[38;5;2;1m[ 58%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\ItemHarvested.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:53.7004068Z ^[[0m^[[38;5;2;1m[ 58%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\ItemList.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:57.5177785Z ^[[0m^[[38;5;2;1m[ 58%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\ItemsPickpocketed.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:58.0803196Z ^[[0m^[[38;5;2;1m[ 59%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\I\IVirtualMachine.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:21:58.8257288Z ^[[0m^[[38;5;2;1m[ 59%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\L\LevelIncrease.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:03.4269717Z ^[[0m^[[38;5;2;1m[ 59%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\L\LocalMapCamera.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:05.7661837Z ^[[0m^[[38;5;2;1m[ 59%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\L\Location.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:06.9652977Z ^[[0m^[[38;5;2;1m[ 59%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\L\LocationCleared.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:08.9243711Z ^[[0m^[[38;5;2;1m[ 59%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\L\LocationDiscovery.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:09.8532785Z ^[[0m^[[38;5;2;1m[ 60%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\L\LockpickingMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:11.2635203Z ^[[0m^[[38;5;2;1m[ 60%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\L\LooseFileStream.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:12.8533392Z ^[[0m^[[38;5;2;1m[ 60%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicCaster.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:13.1597551Z ^[[0m^[[38;5;2;1m[ 60%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicFavorites.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:13.8210443Z ^[[0m^[[38;5;2;1m[ 60%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicFormulas.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:14.9091003Z ^[[0m^[[38;5;2;1m[ 61%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicItem.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:18.2787431Z ^[[0m^[[38;5;2;1m[ 61%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicItemDataCollector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:18.7453310Z ^[[0m^[[38;5;2;1m[ 61%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicItemList.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:19.6087075Z ^[[0m^[[38;5;2;1m[ 61%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicSystem.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:21.3150703Z ^[[0m^[[38;5;2;1m[ 61%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicTarget.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:21.4353883Z ^[[0m^[[38;5;2;1m[ 61%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MagicUtilities.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:24.6417525Z ^[[0m^[[38;5;2;1m[ 62%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\Main.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:28.5122219Z ^[[0m^[[38;5;2;1m[ 62%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MaterialIDs.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:29.4192573Z ^[[0m^[[38;5;2;1m[ 62%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MemoryPage.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:31.6587514Z ^[[0m^[[38;5;2;1m[ 62%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MenuControls.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:31.8405063Z ^[[0m^[[38;5;2;1m[ 62%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MenuCursor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:31.9951375Z ^[[0m^[[38;5;2;1m[ 63%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MenuEventHandler.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:32.0393910Z ^[[0m^[[38;5;2;1m[ 63%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MessageBoxMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:32.9753592Z ^[[0m^[[38;5;2;1m[ 63%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\Misc.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:33.7346532Z ^[[0m^[[38;5;2;1m[ 63%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\M\MissileProjectile.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:34.9536817Z ^[[0m^[[38;5;2;1m[ 63%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NativeFunctionBase.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:38.6125742Z ^[[0m^[[38;5;2;1m[ 63%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NextChildSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:41.0042130Z ^[[0m^[[38;5;2;1m[ 64%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiAlphaProperty.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:41.9761329Z ^[[0m^[[38;5;2;1m[ 64%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiAnimationKey.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:44.0860665Z ^[[0m^[[38;5;2;1m[ 64%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiAVObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:44.1257052Z ^[[0m^[[38;5;2;1m[ 64%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiBackToFrontAccumulator.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:44.1510308Z ^[[0m^[[38;5;2;1m[ 64%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiBinaryExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:44.1881409Z ^[[0m^[[38;5;2;1m[ 65%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiBinaryStream.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:44.3020293Z ^[[0m^[[38;5;2;1m[ 65%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiBooleanExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:44.5253822Z ^[[0m^[[38;5;2;1m[ 65%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiCamera.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:45.8636209Z ^[[0m^[[38;5;2;1m[ 65%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiColor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:52.0540054Z ^[[0m^[[38;5;2;1m[ 65%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiColorData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:53.3092520Z ^[[0m^[[38;5;2;1m[ 65%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiColorKey.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:53.6783427Z ^[[0m^[[38;5;2;1m[ 66%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiControllerManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:54.1247009Z ^[[0m^[[38;5;2;1m[ 66%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiControllerSequence.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:54.7102905Z ^[[0m^[[38;5;2;1m[ 66%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiCullingProcess.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:55.3157838Z ^[[0m^[[38;5;2;1m[ 66%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:22:58.3016649Z ^[[0m^[[38;5;2;1m[ 66%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiFloatData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:01.5125970Z ^[[0m^[[38;5;2;1m[ 67%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiFloatExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:04.3670736Z ^[[0m^[[38;5;2;1m[ 67%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiFloatKey.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:04.8587120Z ^[[0m^[[38;5;2;1m[ 67%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiFloatsExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:05.5561048Z ^[[0m^[[38;5;2;1m[ 67%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiGeometry.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:05.9508599Z ^[[0m^[[38;5;2;1m[ 67%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiIntegerExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:07.1772001Z ^[[0m^[[38;5;2;1m[ 67%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiIntegersExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:08.1881199Z ^[[0m^[[38;5;2;1m[ 68%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiInterpolator.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:11.0440162Z ^[[0m^[[38;5;2;1m[ 68%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiMath.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:12.6920745Z ^[[0m^[[38;5;2;1m[ 68%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiMatrix3.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:13.0751336Z ^[[0m^[[38;5;2;1m[ 68%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiMemManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:13.4864492Z ^[[0m^[[38;5;2;1m[ 68%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:13.6288501Z ^[[0m^[[38;5;2;1m[ 69%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:13.6604877Z ^[[0m^[[38;5;2;1m[ 69%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiObjectNET.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:13.7502196Z ^[[0m^[[38;5;2;1m[ 69%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiPick.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:15.7440317Z ^[[0m^[[38;5;2;1m[ 69%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiPoint2.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:21.4202925Z ^[[0m^[[38;5;2;1m[ 69%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiPoint3.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:21.9272181Z ^[[0m^[[38;5;2;1m[ 69%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiQuaternion.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:22.7321489Z ^[[0m^[[38;5;2;1m[ 70%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiRefObject.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:23.2073486Z ^[[0m^[[38;5;2;1m[ 70%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiSkinInstance.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:23.5753226Z ^[[0m^[[38;5;2;1m[ 70%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiStringsExtraData.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:23.9087105Z ^[[0m^[[38;5;2;1m[ 70%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiSystem.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:24.1291417Z ^[[0m^[[38;5;2;1m[ 70%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiTCollection.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:26.0985000Z ^[[0m^[[38;5;2;1m[ 71%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiTexture.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:27.8823192Z ^[[0m^[[38;5;2;1m[ 71%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiTimeController.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:28.4419112Z ^[[0m^[[38;5;2;1m[ 71%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\N\NiTransform.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:29.2428677Z ^[[0m^[[38;5;2;1m[ 71%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\O\Object.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:29.3964717Z ^[[0m^[[38;5;2;1m[ 71%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\O\ObjectiveState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:29.8450826Z ^[[0m^[[38;5;2;1m[ 71%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\O\ObjectTypeInfo.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:30.3923662Z ^[[0m^[[38;5;2;1m[ 72%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\O\ObjectTypes.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:31.1919934Z ^[[0m^[[38;5;2;1m[ 72%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PackedInstructionStream.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:33.5433087Z ^[[0m^[[38;5;2;1m[ 72%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PackUnpack.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:35.8905413Z ^[[0m^[[38;5;2;1m[ 72%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PlayerCamera.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:36.0106135Z ^[[0m^[[38;5;2;1m[ 72%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PlayerCameraTransitionState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:37.0167151Z ^[[0m^[[38;5;2;1m[ 73%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PlayerCharacter.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:37.2126068Z ^[[0m^[[38;5;2;1m[ 73%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PlayerControls.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:37.3342870Z ^[[0m^[[38;5;2;1m[ 73%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PlayerInputHandler.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:42.2328368Z ^[[0m^[[38;5;2;1m[ 73%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\PriorityChildSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:42.8077653Z ^[[0m^[[38;5;2;1m[ 73%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\ProcessLists.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:43.2885034Z ^[[0m^[[38;5;2;1m[ 73%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\P\Projectile.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:43.8077723Z ^[[0m^[[38;5;2;1m[ 74%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\Q\QuestStatus.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:47.4794023Z ^[[0m^[[38;5;2;1m[ 74%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\R\RaceSexMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:50.1578936Z ^[[0m^[[38;5;2;1m[ 74%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\R\RandomValueChildSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:50.6745497Z ^[[0m^[[38;5;2;1m[ 74%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\R\ReferenceEffectController.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:52.8567985Z ^[[0m^[[38;5;2;1m[ 74%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\R\RemoveCallbackVisitor.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:54.9684294Z ^[[0m^[[38;5;2;1m[ 75%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\R\Renderer.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:57.3414048Z ^[[0m^[[38;5;2;1m[ 75%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\R\RenderTargetManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:57.5648821Z ^[[0m^[[38;5;2;1m[ 75%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\R\Rumble.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:57.8026056Z ^[[0m^[[38;5;2;1m[ 75%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\ScrapHeap.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:23:59.1161392Z ^[[0m^[[38;5;2;1m[ 75%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\Script.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:01.1836928Z ^[[0m^[[38;5;2;1m[ 75%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\ScriptEventSourceHolder.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:03.5224117Z ^[[0m^[[38;5;2;1m[ 76%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\SendHUDMessage.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:04.1711824Z ^[[0m^[[38;5;2;1m[ 76%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\SendUIMessage.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:09.4620786Z ^[[0m^[[38;5;2;1m[ 76%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\Setting.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:10.8058522Z ^[[0m^[[38;5;2;1m[ 76%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\ShadowSceneNode.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:11.8583223Z ^[[0m^[[38;5;2;1m[ 76%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\ShoutAttack.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:12.7632900Z ^[[0m^[[38;5;2;1m[ 77%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\SkillIncrease.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:14.3259893Z ^[[0m^[[38;5;2;1m[ 77%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\Sky.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:18.3662663Z ^[[0m^[[38;5;2;1m[ 77%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\SkyrimVM.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:18.8530026Z ^[[0m^[[38;5;2;1m[ 77%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\SoulsTrapped.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:21.8908381Z ^[[0m^[[38;5;2;1m[ 77%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\SourceActionMap.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:22.4344467Z ^[[0m^[[38;5;2;1m[ 77%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\SpellsLearned.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:23.9932892Z ^[[0m^[[38;5;2;1m[ 78%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\Stack.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:26.4422769Z ^[[0m^[[38;5;2;1m[ 78%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\StackFrame.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:30.3224681Z ^[[0m^[[38;5;2;1m[ 78%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\Stream.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:30.7654546Z ^[[0m^[[38;5;2;1m[ 78%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\StreamBase.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:31.1722960Z ^[[0m^[[38;5;2;1m[ 78%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\S\Sun.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:31.4453657Z ^[[0m^[[38;5;2;1m[ 79%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\Skyrim.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:31.9375660Z ^[[0m^[[38;5;2;1m[ 79%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TaskQueueInterface.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:34.8385236Z ^[[0m^[[38;5;2;1m[ 79%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TES.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:38.1508978Z ^[[0m^[[38;5;2;1m[ 79%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESActorBase.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:38.4382983Z ^[[0m^[[38;5;2;1m[ 79%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESAIForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:38.6653473Z ^[[0m^[[38;5;2;1m[ 79%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESAmmo.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:39.6899140Z ^[[0m^[[38;5;2;1m[ 80%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESCamera.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:40.0781196Z ^[[0m^[[38;5;2;1m[ 80%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESCameraState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:45.8694539Z ^[[0m^[[38;5;2;1m[ 80%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESClimate.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:47.5411335Z ^[[0m^[[38;5;2;1m[ 80%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESCondition.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:47.8465411Z ^[[0m^[[38;5;2;1m[ 80%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESContainer.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:48.7058785Z ^[[0m^[[38;5;2;1m[ 81%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESDataHandler.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:49.1542264Z ^[[0m^[[38;5;2;1m[ 81%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESDescription.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:49.6122584Z ^[[0m^[[38;5;2;1m[ 81%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESFaction.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:53.7924215Z ^[[0m^[[38;5;2;1m[ 81%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESFile.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:56.2768079Z ^[[0m^[[38;5;2;1m[ 81%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:57.9412685Z ^[[0m^[[38;5;2;1m[ 81%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESHavokUtilities.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:24:59.2518336Z ^[[0m^[[38;5;2;1m[ 82%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESHitEvent.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:00.9637012Z ^[[0m^[[38;5;2;1m[ 82%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESLeveledList.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:01.7518213Z ^[[0m^[[38;5;2;1m[ 82%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESNPC.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:02.1310100Z ^[[0m^[[38;5;2;1m[ 82%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESObjectARMA.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:02.9069129Z ^[[0m^[[38;5;2;1m[ 82%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESObjectARMO.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:08.9482715Z ^[[0m^[[38;5;2;1m[ 83%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESObjectBOOK.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:09.5678728Z ^[[0m^[[38;5;2;1m[ 83%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESObjectCELL.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:11.5741264Z ^[[0m^[[38;5;2;1m[ 83%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESObjectREFR.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:12.3640481Z ^[[0m^[[38;5;2;1m[ 83%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESObjectSTAT.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:14.5075178Z ^[[0m^[[38;5;2;1m[ 83%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESObjectWEAP.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:14.9780538Z ^[[0m^[[38;5;2;1m[ 83%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESQuest.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:15.7655440Z ^[[0m^[[38;5;2;1m[ 84%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESRace.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:16.9557952Z ^[[0m^[[38;5;2;1m[ 84%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESSpellList.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:19.4518707Z ^[[0m^[[38;5;2;1m[ 84%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESTopic.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:19.9532677Z ^[[0m^[[38;5;2;1m[ 84%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESTopicInfo.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:22.0247131Z ^[[0m^[[38;5;2;1m[ 84%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESValueForm.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:23.9737355Z ^[[0m^[[38;5;2;1m[ 85%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESWaterReflections.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:24.9797458Z ^[[0m^[[38;5;2;1m[ 85%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESWaterSystem.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:27.5879425Z ^[[0m^[[38;5;2;1m[ 85%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TESWorldSpace.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:29.6461150Z ^[[0m^[[38;5;2;1m[ 85%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\ThirdPersonState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:30.2410068Z ^[[0m^[[38;5;2;1m[ 85%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\ThumbstickEvent.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:33.5933606Z ^[[0m^[[38;5;2;1m[ 85%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TutorialMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:34.9773462Z ^[[0m^[[38;5;2;1m[ 86%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TweenMenuCameraState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:35.4733934Z ^[[0m^[[38;5;2;1m[ 86%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\T\TypeInfo.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:36.3264830Z ^[[0m^[[38;5;2;1m[ 86%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\U\UI.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:36.4389238Z ^[[0m^[[38;5;2;1m[ 86%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\U\UI3DSceneManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:38.2714679Z ^[[0m^[[38;5;2;1m[ 86%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\U\UIBlurManager.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:39.4691137Z ^[[0m^[[38;5;2;1m[ 87%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\U\UIMessageQueue.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:42.6514264Z ^[[0m^[[38;5;2;1m[ 87%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\U\UnlinkedTypes.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:45.4623344Z ^[[0m^[[38;5;2;1m[ 87%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\U\UserEvents.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:46.3726710Z ^[[0m^[[38;5;2;1m[ 87%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\V\ValueChildSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:48.0404166Z ^[[0m^[[38;5;2;1m[ 87%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\V\Variable.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:49.5073336Z ^[[0m^[[38;5;2;1m[ 87%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\V\VATSCameraState.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:52.2973664Z ^[[0m^[[38;5;2;1m[ 88%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\V\VirtualMachine.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:54.3157878Z ^[[0m^[[38;5;2;1m[ 88%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\W\WeightedRandomChildSelector.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:55.1576520Z ^[[0m^[[38;5;2;1m[ 88%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\W\WorldSpaceMenu.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:55.7334217Z ^[[0m^[[38;5;2;1m[ 88%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\RE\Z\ZeroFunctionArguments.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:25:59.1787387Z ^[[0m^[[38;5;2;1m[ 88%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REL\IDDB.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:00.0856866Z ^[[0m^[[38;5;2;1m[ 89%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REL\Module.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:00.6509322Z ^[[0m^[[38;5;2;1m[ 89%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REL\Offset2ID.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:01.5936811Z ^[[0m^[[38;5;2;1m[ 89%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REL\Relocation.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:01.8393855Z ^[[0m^[[38;5;2;1m[ 89%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REL\Verify.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:02.5864944Z ^[[0m^[[38;5;2;1m[ 89%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REL\Version.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:06.7014071Z ^[[0m^[[38;5;2;1m[ 89%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REX\REX.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:07.5276954Z ^[[0m^[[38;5;2;1m[ 90%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\REX\W32.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:07.5620910Z ^[[0m^[[38;5;2;1m[ 90%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\API.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:07.5705932Z ^[[0m^[[38;5;2;1m[ 90%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\IAT.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:07.8068262Z ^[[0m^[[38;5;2;1m[ 90%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\Impl\PCH.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:07.9334557Z ^[[0m^[[38;5;2;1m[ 90%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\InputMap.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:08.0355892Z ^[[0m^[[38;5;2;1m[ 91%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\Interfaces.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:08.4144614Z ^[[0m^[[38;5;2;1m[ 91%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\Logger.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:08.9758515Z ^[[0m^[[38;5;2;1m[ 91%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\RegistrationSet.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:12.4372925Z ^[[0m^[[38;5;2;1m[ 91%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\RegistrationSetUnique.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:14.8103505Z ^[[0m^[[38;5;2;1m[ 91%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\Trampoline.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:16.6706970Z ^[[0m^[[38;5;2;1m[ 91%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m compiling.releasedbg lib\commonlibsse-ng\src\SKSE\Translation.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:17.9623449Z ^[[0m^[[38;5;2;1m[ 92%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m compiling.releasedbg src\converter.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:19.2824026Z ^[[0m^[[38;5;2;1m[ 92%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m compiling.releasedbg build\.gens\APoseFix\windows\x64\releasedbg\commonlib-plugin.rc^[[0m
+windows	Build the plugin	2026-10-12T00:26:20.4841834Z ^[[0m^[[38;5;2;1m[ 92%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m compiling.releasedbg src\hook.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:21.4546407Z ^[[0m^[[38;5;2;1m[ 92%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m compiling.releasedbg src\main.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:22.6670204Z ^[[0m^[[38;5;2;1m[ 92%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m compiling.releasedbg src\paths.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:23.0874399Z ^[[0m^[[38;5;3;1mlib\commonlibsse-ng\src\SKSE\Trampoline.cpp(173,180): warning C4100: 'a_loc': unreferenced parameter
+windows	Build the plugin	2026-10-12T00:26:23.3178851Z 	void Trampoline::write_5branch(std::uintptr_t a_src, std::uintptr_t a_dst, std::uint8_t a_opcode, bool a_skipSafetyCheck, std::uint64_t a_expectedPatchHash, std::source_location a_loc)
+windows	Build the plugin	2026-10-12T00:26:23.4763404Z 	                                                                                                                                                                                  ^
+windows	Build the plugin	2026-10-12T00:26:23.6836441Z lib\commonlibsse-ng\src\SKSE\Trampoline.cpp(173,138): warning C4100: 'a_expectedPatchHash': unreferenced parameter
+windows	Build the plugin	2026-10-12T00:26:24.0571362Z 	void Trampoline::write_5branch(std::uintptr_t a_src, std::uintptr_t a_dst, std::uint8_t a_opcode, bool a_skipSafetyCheck, std::uint64_t a_expectedPatchHash, std::source_location a_loc)
+windows	Build the plugin	2026-10-12T00:26:24.4188880Z 	                                                                                                                                        ^
+windows	Build the plugin	2026-10-12T00:26:24.6655822Z lib\commonlibsse-ng\src\SKSE\Trampoline.cpp(173,105): warning C4100: 'a_skipSafetyCheck': unreferenced parameter
+windows	Build the plugin	2026-10-12T00:26:25.0149605Z 	void Trampoline::write_5branch(std::uintptr_t a_src, std::uintptr_t a_dst, std::uint8_t a_opcode, bool a_skipSafetyCheck, std::uint64_t a_expectedPatchHash, std::source_location a_loc)
+windows	Build the plugin	2026-10-12T00:26:25.3724905Z 	                                                                                                       ^
+windows	Build the plugin	2026-10-12T00:26:25.7504573Z lib\commonlibsse-ng\src\SKSE\Trampoline.cpp(235,179): warning C4100: 'a_loc': unreferenced parameter
+windows	Build the plugin	2026-10-12T00:26:26.0504873Z 	void Trampoline::write_6branch(std::uintptr_t a_src, std::uintptr_t a_dst, std::uint8_t a_modrm, bool a_skipSafetyCheck, std::uint64_t a_expectedPatchHash, std::source_location a_loc)
+windows	Build the plugin	2026-10-12T00:26:26.3271330Z 	                                                                                                                                                                                 ^
+windows	Build the plugin	2026-10-12T00:26:26.5268783Z lib\commonlibsse-ng\src\SKSE\Trampoline.cpp(235,137): warning C4100: 'a_expectedPatchHash': unreferenced parameter
+windows	Build the plugin	2026-10-12T00:26:26.6671046Z 	void Trampoline::write_6branch(std::uintptr_t a_src, std::uintptr_t a_dst, std::uint8_t a_modrm, bool a_skipSafetyCheck, std::uint64_t a_expectedPatchHash, std::source_location a_loc)
+windows	Build the plugin	2026-10-12T00:26:26.8220437Z 	                                                                                                                                       ^
+windows	Build the plugin	2026-10-12T00:26:27.0187229Z lib\commonlibsse-ng\src\SKSE\Trampoline.cpp(235,104): warning C4100: 'a_skipSafetyCheck': unreferenced parameter^[[0m
+windows	Build the plugin	2026-10-12T00:26:27.1815681Z ^[[0m^[[38;5;2;1m[ 93%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m compiling.releasedbg build\.gens\APoseFix\windows\x64\releasedbg\commonlibsse-ng-plugin.cpp^[[0m
+windows	Build the plugin	2026-10-12T00:26:27.3444144Z ^[[0m^[[38;5;2;1m[ 93%]:^[[0m ^[[38;5;5;1m<commonlibsse-ng>^[[0m ^[[38;5;5;1marchiving.releasedbg commonlibsse-ng.lib^[[0m
+windows	Build the plugin	2026-10-12T00:26:27.6472936Z ^[[0m^[[38;5;3;1mD:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix\src\hook.h(244): warning C4996: 'SKSE::AllocTrampoline': Use SKSE::Init(..., {}) instead
+windows	Build the plugin	2026-10-12T00:26:27.7645001Z D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix\src\hook.h(241): warning C4505: 'APoseFix::InstallHooks': unreferenced function with internal linkage has been removed^[[0m
+windows	Build the plugin	2026-10-12T00:26:28.1179562Z ^[[0m^[[38;5;3;1mD:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix\src\hook.h(244): warning C4996: 'SKSE::AllocTrampoline': Use SKSE::Init(..., {}) instead^[[0m
+windows	Build the plugin	2026-10-12T00:26:34.0788874Z ^[[0m^[[38;5;2;1m[ 94%]:^[[0m ^[[38;5;5;1m<APoseFix>^[[0m ^[[38;5;5;1mlinking.releasedbg APoseFix.dll^[[0m
+windows	Build the plugin	2026-10-12T00:26:34.9165957Z ^[[0m^[[38;5;2;1m[100%]:^[[0m ^[[38;5;2;1mbuild ok, spent 728.016s^[[0m
+windows	Build the plugin	2026-10-12T00:26:34.9523552Z total 1472244
+windows	Build the plugin	2026-10-12T00:26:34.9523953Z -rwxr-xr-x 1 runneradmin 197121   10063360 Oct 12 00:26 APoseFix.dll
+windows	Build the plugin	2026-10-12T00:26:34.9524398Z -rw-r--r-- 1 runneradmin 197121        988 Oct 12 00:26 APoseFix.exp
+windows	Build the plugin	2026-10-12T00:26:34.9524893Z -rw-r--r-- 1 runneradmin 197121       2130 Oct 12 00:26 APoseFix.lib
+windows	Build the plugin	2026-10-12T00:26:34.9525332Z -rw-r--r-- 1 runneradmin 197121   23760896 Oct 12 00:26 APoseFix.pdb
+windows	Build the plugin	2026-10-12T00:26:34.9525951Z -rw-r--r-- 1 runneradmin 197121 1430569070 Oct 12 00:26 commonlibsse-ng.lib
+windows	Build the plugin	2026-10-12T00:26:34.9526591Z -rw-r--r-- 1 runneradmin 197121   23375872 Oct 12 00:26 commonlibsse-ng.pdb
+windows	Build the plugin	2026-10-12T00:26:34.9527181Z -rw-r--r-- 1 runneradmin 197121   19795968 Oct 12 00:26 compile.APoseFix.pdb
+windows	Stage as an installable mod	﻿2026-10-12T00:26:34.9700304Z ##[group]Run set -euo pipefail
+windows	Stage as an installable mod	2026-10-12T00:26:34.9700714Z ^[[36;1mset -euo pipefail^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9701029Z ^[[36;1mmkdir -p dist/SKSE/Plugins^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9701379Z ^[[36;1mcp build/windows/x64/releasedbg/APoseFix.dll dist/SKSE/Plugins/^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9701852Z ^[[36;1m# the symbol file is optional: it lets a crash logger print function names for this DLL^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9702293Z ^[[36;1mif [ -f build/windows/x64/releasedbg/APoseFix.pdb ]; then^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9702688Z ^[[36;1m  cp build/windows/x64/releasedbg/APoseFix.pdb dist/SKSE/Plugins/^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9703013Z ^[[36;1mfi^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9703246Z ^[[36;1msha256sum dist/SKSE/Plugins/APoseFix.dll^[[0m
+windows	Stage as an installable mod	2026-10-12T00:26:34.9714081Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+windows	Stage as an installable mod	2026-10-12T00:26:34.9714459Z env:
+windows	Stage as an installable mod	2026-10-12T00:26:34.9714743Z   SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+windows	Stage as an installable mod	2026-10-12T00:26:34.9715105Z   SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+windows	Stage as an installable mod	2026-10-12T00:26:34.9715511Z   XMAKE_VERSION: 3.1.1
+windows	Stage as an installable mod	2026-10-12T00:26:34.9715900Z ##[endgroup]
+windows	Stage as an installable mod	2026-10-12T00:26:35.1273625Z f4a28db7b17a5168ba97918b5c818573b05bc4cf4322513ba362cb21071d44bb *dist/SKSE/Plugins/APoseFix.dll
+windows	Run actions/upload-artifact@v4	﻿2026-10-12T00:26:35.1486467Z ##[group]Run actions/upload-artifact@v4
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1486839Z with:
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1487063Z   name: APoseFix-skyrim-1.7
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1487302Z   path: dist
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1487513Z   if-no-files-found: error
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1487790Z   compression-level: 6
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1488010Z   overwrite: false
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1488232Z   include-hidden-files: false
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1488465Z env:
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1488932Z   SERDE_HKX_REPO: https://github.com/SARDONYX-sard/serde-hkx
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1489335Z   SERDE_HKX_SHA: 3f53c0596dd916c964d7efe71fb514cc74430a51
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1489653Z   XMAKE_VERSION: 3.1.1
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.1489870Z ##[endgroup]
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.3071626Z (node:9540) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.3072411Z (Use `node --trace-deprecation ...` to show where the warning was created)
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.3141787Z With the provided path, there will be 2 files uploaded
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.3145978Z Artifact name is valid!
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.3147132Z Root directory input is valid!
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:35.6561110Z Beginning upload of artifact content to blob storage
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:36.3667510Z (node:9540) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.4812574Z Uploaded bytes 8388608
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.5716484Z Uploaded bytes 9101529
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.6350654Z Finished uploading artifact content to blob storage!
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.6351577Z SHA256 digest of uploaded artifact zip is da2686baeabc6960a541516f66812535aba80effcc105d402d8af85f44f9d834
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.6354048Z Finalizing artifact upload
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.8918883Z Artifact APoseFix-skyrim-1.7.zip successfully finalized. Artifact ID 11719609176
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.8919681Z Artifact APoseFix-skyrim-1.7 has been successfully uploaded! Final size is 9101529 bytes. Artifact ID is 11719609176
+windows	Run actions/upload-artifact@v4	2026-10-12T00:26:37.8930150Z Artifact download URL: https://github.com/xFeuer/Skyrim-A-Pose-Fix/actions/runs/38187013382/artifacts/11719609176
+windows	Post Run actions/checkout@v4	﻿2026-10-12T00:26:37.9276744Z Post job cleanup.
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.0787482Z [command]"C:\Program Files\Git\bin\git.exe" version
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.1038719Z git version 2.55.0.windows.5
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.1103961Z Temporarily overriding HOME='D:\a\_temp\d8baf223-1a7e-4c20-ad68-4686c14fca14' before making global git config changes
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.1105159Z Adding repository directory to the temporary git global config as a safe directory
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.1114243Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\Skyrim-A-Pose-Fix\Skyrim-A-Pose-Fix
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.1437115Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.1718057Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.6637739Z Entering 'lib/commonlibsse-ng'
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.7406260Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.8270461Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.8546615Z http.https://github.com/.extraheader
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.8594983Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:38.8892238Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:39.4002161Z Entering 'lib/commonlibsse-ng'
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:39.4586561Z http.https://github.com/.extraheader
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:39.5022450Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:39.5628469Z http.https://github.com/.extraheader
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:39.6164897Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:39.6461846Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:40.1691871Z Entering 'lib/commonlibsse-ng'
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:40.2011990Z file:D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/.git/modules/lib/commonlibsse-ng/config	remote.origin.url
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:40.2174922Z Entering 'lib/commonlibsse-ng/extern/openvr'
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:40.2494053Z file:D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/.git/modules/lib/commonlibsse-ng/modules/openvr/config	remote.origin.url
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:40.2774231Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/.git/modules/lib/commonlibsse-ng/config --name-only --get-regexp ^includeIf\.gitdir:
+windows	Post Run actions/checkout@v4	2026-10-12T00:26:40.3093273Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:/a/Skyrim-A-Pose-Fix/Skyrim-A-Pose-Fix/.git/modules/lib/commonlibsse-ng/modules/openvr/config --name-only --get-regexp ^includeIf\.gitdir:
+windows	Complete job	﻿2026-10-12T00:26:40.3558142Z Cleaning up orphan processes
+windows	Complete job	2026-10-12T00:26:40.4120780Z Terminate orphan process: pid (9644) (vctip)
+windows	Complete job	2026-10-12T00:26:40.4243055Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
